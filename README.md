@@ -11,9 +11,9 @@
   - 1)Business Issue Understanding
   - 2)Data Understanding
   - 3)Data Preparation
-  - 4)Analysis/Modeling
+  - 4)Performing Analysis + Modeling
   - 5)Validation
-  - 6)Presentation/Visualization
+  - 6)Presentation + Visualization
   
 ex> How much electricity capacity does the company need to supply for any given hour tomorrow in a utility company? 
   
@@ -34,22 +34,17 @@ ex> How much electricity capacity does the company need to supply for any given 
    
 *Formatting* refers to format the data by changing the way a date field appears, renaming a field, or even rotating the data, similar to using a pivot table. *Blending* refers to combine the data with other datasets to enrich it with additional variables, similar to using the vlookup function in Excel. *Sampling* refers to sample the dataset and work with a more manageable number of records.
 
+**4) Performing Analysis + Modeling**
+  - Various modeling techniques are selected and applied, and their parameters are calibrated to optimal values. Typically, there are several techniques for the same data mining problem type. Some techniques have specific requirements on the form of data. Therefore, stepping back to the data preparation phase is often needed.
+    - >After creating a model, we repeat the process to predict electricity usage for a given hour on the next day. This includes the number of electricity plants we need for any given temperature, as well as the thresholds when we need to activate additional plants or purchase it on the market. 
+    
+**5) Validation**
+  - Before proceeding to final deployment of the model, it is important to more thoroughly evaluate the model, and review the steps executed to construct the model, to be certain it properly achieves the business objectives. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**6) Presentation + Visualization**
+  - Determine the best method of presenting insights based on the audience
+  - Make sure the amount of information shared is not overwhelming
+  - Use the results to tell a story to the audience
 -----------------------------------------------------------------------------------------------
 
 **[B. Methodology Map]** is a guide to determine the appropriate analytical technique(s) to solve a particular business question or problem. The map outlines two main scenarios for a business problem:
