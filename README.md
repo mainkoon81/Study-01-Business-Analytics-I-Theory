@@ -14,6 +14,23 @@
   - 4)Analysis/Modeling
   - 5)Validation
   - 6)Presentation/Visualization
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
 
 **The Methodology Map** is a guide to determine the appropriate analytical technique(s) to solve a particular business question or problem. The map outlines two main scenarios for a business problem:
 
