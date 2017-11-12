@@ -25,13 +25,16 @@ ex> How much electricity capacity does the company need to supply for any given 
     - >Prediction: How much electricity will be demanded in each hour of the day tomorrow?   
 
 **2) Data Understanding** 
-  - what data is needed and available?
+  - What data is needed and available?
   - What are the important characteristics of the data?
     - >Data Collecting: What factors drives electricity demand tomorrow? 
 
 **3) Data Preparation**
+  - Gathering - Cleansing - Formatting - Blending - Sampling
+   
+*Formatting* refers to format the data by changing the way a date field appears, renaming a field, or even rotating the data, similar to using a pivot table. *Blending* refers to combine the data with other datasets to enrich it with additional variables, similar to using the vlookup function in Excel. *Sampling* refers to sample the dataset and work with a more manageable number of records.
 
-  
+
 
 
 
