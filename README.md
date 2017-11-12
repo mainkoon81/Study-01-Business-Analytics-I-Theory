@@ -7,7 +7,7 @@
   - A. Problem Solving Framework: CRISP-DM(Cross Industry Standard Process for Data Mining) 
   - B. Methodology Map
 
-**[A. CRISP-DM]** was originally developed by data miners in order to generalize the common approaches to defining and analyzing a problem. CRISP-DM is the "Problem Solving Framework". The framework is made up of 6 steps:
+**[A. CRISP-DM]** was originally developed by data miners in order to generalize the common approaches to defining and analyzing a problem. CRISP-DM is the "Problem Solving Framework". Let's have a mental model! The framework is made up of 6 steps:
   - 1)Business Issue Understanding
   - 2)Data Understanding
   - 3)Data Preparation
@@ -15,16 +15,23 @@
   - 5)Validation
   - 6)Presentation/Visualization
   
+ex> How much electricity capacity does the company need to supply for any given hour tomorrow in a utility company? 
+  
 **1) Business Issue Understanding** 
-
-(Q.How much electricity capacity does the company need to supply for any given hour tomorrow in a utility company?) 
   - What decisions needs to be made?
   - What information is needed to inform those decisions?
   - What type of analysis can provide the information needed to inform those decisions?
-    - Research: How do we supply the power we need? 
-    - Prediction: How much electricity will be demanded in each hour of the day tomorrow?   
+    - >Research: How do we supply the power we need? 
+    - >Prediction: How much electricity will be demanded in each hour of the day tomorrow?   
 
 **2) Data Understanding** 
+  - what data is needed and available?
+  - What are the important characteristics of the data?
+    - >Data Collecting: What factors drives electricity demand tomorrow? 
+
+**3) Data Preparation**
+
+  
 
 
 
