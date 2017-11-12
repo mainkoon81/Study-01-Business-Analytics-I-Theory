@@ -15,7 +15,7 @@
   - 5)Validation
   - 6)Presentation + Visualization
   
-ex> How much electricity capacity does the company need to supply for any given hour tomorrow in a utility company? 
+>ex> How much electricity capacity does the company need to supply for any given hour tomorrow in a utility company? 
   
 **1) Business Issue Understanding** 
   - What decisions needs to be made?
