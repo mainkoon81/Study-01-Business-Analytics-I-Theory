@@ -46,17 +46,17 @@
   - Make sure the amount of information shared is not overwhelming
   - Use the results to tell a story to the audience
 -----------------------------------------------------------------------------------------------
+## Ok, which methodology will we use? 
 
 **[B. Methodology Map]** is a guide to determine the appropriate analytical technique(s) to solve a particular business question or problem. The map outlines two main scenarios for a business problem:
 
-<img src="https://user-images.githubusercontent.com/31917400/32698915-d8ea47ea-c7a4-11e7-9059-b190b5216afd.jpg" width="600" height="300" />
-
-  - 1)Data analysis
+  - **Non Predictive Analysis**
 refers to the more standard approaches of blending together data and reporting on trends and statistics and helps answer business questions that involve understanding more about the dataset such as "On average, how many people order coffee and a donut per transaction in my store in any given week?"
 
-  - 2)Predictive analysis
+  - **Predictive Analysis**
 help businesses predict future behavior based on existing data such as "Given the average coffee order, how much coffee can I expect to sell next week if I were to add a new brand of coffee?"
 
+<img src="https://user-images.githubusercontent.com/31917400/32698915-d8ea47ea-c7a4-11e7-9059-b190b5216afd.jpg" width="600" height="300" />
 
 
 
