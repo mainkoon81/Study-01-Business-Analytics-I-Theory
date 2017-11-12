@@ -4,7 +4,7 @@
 >“We’re onboarding a new client next month as part of a very large deal. It’s critical that we support them with our excellent service levels. I need to know how many tickets per week on average we can expect from this client so we can ensure we have enough help desk resources in place.”
 
 **2 key analytical concepts** to understand business situation and analyze data.
-  - Cross Industry Standard Process for Data Mining (CRISP-DM)
+  - Problem Solving Framework: CRISP-DM(Cross Industry Standard Process for Data Mining) 
   - Methodology Map
 
 **CRISP-DM** was originally developed by data miners in order to generalize the common approaches to defining and analyzing a problem. CRISP-DM is the "Problem Solving Framework". The framework is made up of 6 steps:
