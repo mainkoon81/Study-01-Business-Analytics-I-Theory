@@ -58,9 +58,17 @@ help businesses predict future behavior based on existing data such as "Given th
 
 <img src="https://user-images.githubusercontent.com/31917400/32698915-d8ea47ea-c7a4-11e7-9059-b190b5216afd.jpg" width="600" height="300" />
 
+1)*Non Predictive Analysis
+  - Geospatial (using location based data to drive conclusion - by Geographic dimension: zip-code,country,etc)
+  - Segmentation (grouping data together) 
+  - Aggregation (calculating a value across a group or dimension)
+  - Descriptive (providing simple summaries of a data sample - Mean, Median, Mode, SD, and Interquartile range)
 
-
-
+2)*Predictive Analysis
+  - Step1. Investigate the data (Rich/Poor)...if "data poor" ? => Setting up an experiment (A/B testing) 
+  - Step2. Expecting outcomes if Numeric/Non-Numeric or categorical...(N->Regression)/(NN->Classification)
+  - Step3. 
+  
 
 
 
