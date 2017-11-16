@@ -3,6 +3,12 @@
 ### Intro
 >“We’re onboarding a new client next month as part of a very large deal. It’s critical that we support them with our excellent service levels. I need to know how many tickets per week on average we can expect from this client so we can ensure we have enough help desk resources in place.”
 
+>**What decisions need to be made?**
+The decision the sales manager needs to make is, “Do we have enough capacity on the support team to handle the support tickets from the new customer?” and “If not, how many people do we need to add to the support team to reach the desired capacity?”
+
+>**What information do we need to inform this decision?**
+We need to calculate the average number of tickets per customer per week. We can then aggregate the average number of tickets for each customer to get a total average number of support tickets that we predict will be submitted per week. Once we have this information, we need to compare the predicted average number of tickets with the current capacity of the support staff, specifically, the average number of tickets each team member can handle. **What type of analysis is needed to get the information needed to make that decision?**
+
 **2 key analytical concepts** to understand business situation and analyze data.
   - A. Problem Solving Framework: CRISP-DM(Cross Industry Standard Process for Data Mining) 
   - B. Methodology Map
@@ -74,6 +80,12 @@ help businesses predict future behavior based on existing data such as "Given th
 --------------------------------------------------------------------------------------------------------------------------------------  
 
 ### 1) For Numeric & continuous outcome, [Linear Regression]
+>Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
+
+__A. Linear Regression Validation:__ 
+#the correlation coefficient - cov(x,y)/sqrt(var(x)*var(y)) - shows how much x and y are correlated. 
+cov(x,y) - E[(x-E[x])(y-E[y])] or E[xy]-E[x]E[y] - is a measure of how much x and y move together with the point [mean(x), mean(y)] as a center.   
+
 
 
 
