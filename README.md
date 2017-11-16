@@ -83,8 +83,9 @@ help businesses predict future behavior based on existing data such as "Given th
 >Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
 
 __A. Linear Regression Validation:__ 
-#the correlation coefficient - cov(x,y)/sqrt(var(x)*var(y)) - shows how much x and y are correlated. 
-cov(x,y) - E[(x-E[x])(y-E[y])] or E[xy]-E[x]E[y] - is a measure of how much x and y move together with the point [mean(x), mean(y)] as a center.   
+
+#the correlation coefficient: cov(x,y)/sqrt(var(x)*var(y)) shows how much x and y are correlated. 
+#cov(x,y): E[(x-E[x])(y-E[y])] or E[xy]-E[x]E[y] is a measure of how much x and y move together with the point [mean(x), mean(y)] as a center.   
 
 
 
