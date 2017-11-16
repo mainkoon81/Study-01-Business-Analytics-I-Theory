@@ -65,8 +65,9 @@ help businesses predict future behavior based on existing data such as "Given th
   - Descriptive (providing simple summaries of a data sample - Mean, Median, Mode, SD, and Interquartile range)
 
 2)*Predictive Analysis
-  - Step1. Investigate the data (Rich/Poor)...if "data poor" ? => Setting up an experiment (A/B testing) 
-  - Step2. Expecting outcomes if it is Numeric/Non-Numeric or categorical...(N->Regression)/(NN->Classification)
+  - Step1. Investigate the data (Rich/Poor)...if "data poor" ? 
+    - => Setting up an experiment called "A/B testing" 
+  - Step2. Expecting outcomes if it is Numeric/Non-Numeric (categorical)
     - Numeric Types: 1)continuous(taking all values in a range), 2)Time-Based, 3)discrete(count)
     - Non-Numeric Types: 1)binary, 2)Non-binary
   - Step3. Model Selection 
