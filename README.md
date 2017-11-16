@@ -71,7 +71,28 @@ help businesses predict future behavior based on existing data such as "Given th
     - Numeric Types: 1)continuous(taking all values in a range), 2)Time-Based, 3)discrete(count)
     - Non-Numeric Types: 1)binary, 2)Non-binary
   - Step3. Model Selection 
-  
+--------------------------------------------------------------------------------------------------------------------------------------  
+
+### 1) For Numeric & continuous outcome, [Linear Regression]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
