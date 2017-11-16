@@ -67,7 +67,7 @@ help businesses predict future behavior based on existing data such as "Given th
 2)*Predictive Analysis
   - Step1. Investigate the data (Rich/Poor)...if "data poor" ? => Setting up an experiment (A/B testing) 
   - Step2. Expecting outcomes if it is Numeric/Non-Numeric or categorical...(N->Regression)/(NN->Classification)
-    - Numeric Types: 1)continuous(taking all values in a range), 2)discrete(count), 3)Time-Based
+    - Numeric Types: 1)continuous(taking all values in a range), 2)Time-Based, 3)discrete(count)
     - Non-Numeric Types: 1)binary, 2)Non-binary
   - Step3. Model Selection 
   
