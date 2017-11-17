@@ -82,7 +82,7 @@ help businesses predict future behavior based on existing data such as "Given th
 ### 1) For Numeric & continuous outcome, [Linear Regression]
 >Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
 
-__A. Linear Regression Validation:__ 
+__Issue A. Validation:__ a good fit of our data? 
 
 #correlation coefficient: cov(x,y)/sqrt(var(x)*var(y)) shows how much x and y are correlated. This value is often referred to as r. The range of r is from -1 to +1  (Explained variation / Total variation)
 
@@ -92,17 +92,28 @@ __A. Linear Regression Validation:__
 
 > significance of predictor by P-value..we want high
 
-> explaining variablilty by R-squared-value..we want high
+> degree of explained variablilty by R-squared-value..we want high
 
 But first, R-squared cannot determine whether the coefficient estimates and predictions are biased, which is why we must assess the residual plots. Second, the low P value with high R-squared combination also indicates that changes in the predictors are related to changes in the response variable and that our model explains a lot of the response variability, but what if we have significant predictors but a low R-squared value(R-squared represents the scatter around the regression line)???? This is because of a prediction interval. A prediction interval is a range that is likely to contain the response value of a single new observation given specified settings of the predictors in our model. Narrower intervals indicate more precise predictions. When the data points are spread out further, the predictions must reflect that added uncertainty. In this case, then we need to add more variables to the model. 
 
 <img src="https://user-images.githubusercontent.com/31917400/32923154-e19c1f8a-cb2d-11e7-9737-255e74e372c5.jpg" width="600" height="150" />
 
-#
+__Issue B. Multiple Predictors:__ Using more data to strengthen the Correlation Coefficient
 
+Y=β0+β(X) is to become Y=β0+β1(x1)+β2(x2)+β3(x3)+β4(x4)....
 
+#Step.1 Cleaning up the data so that the dataset does not have any bias to any of our variables. 
 
+#Step.2 Graphing a scatter-plot between each predictor variable and the response variable.
+  - Our numerical values of predictors are normally distributed?
+  - Our numerical predictors have a linear relationship with the response variable ? (high P-value?) (E[RES]=0) (E[Y-βX]=0)
+  - Our numerical predictors share the same variance? (homoscedasticity) (var[RES]=σ^2)
+  - RES are uncorrelated with our model? 
 
+As for categorical variables, we cannot use a scatterplot to see whether a linear relationship exists. The best way to check for this is to see if the coefficients turn out to be significant with a high multiple-R-squared. If there is a linear relationship, then the coefficients should be significant and the multiple-R-squared should be relatively high. 
+
+#Step.3 Checking Adjusted R-squared.
+  - In a nutshell, the more variables that are included, the higher the r-squared value will be - even if there is no relationship between the additional variables and the response variable.  
 
 
 
