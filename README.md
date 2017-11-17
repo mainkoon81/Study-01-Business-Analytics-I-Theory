@@ -82,6 +82,10 @@ help businesses predict future behavior based on existing data such as "Given th
 ### 1) For Numeric & continuous outcome, [Linear Regression]
 >Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
 
+```
+Linear Regression is a statistical method used to predict numeric outcomes by analyzing the outcome’s relationship with one or more predictor variables.
+```
+
 __Issue A. Validation:__ a good fit of our data? 
 
 #correlation coefficient: cov(x,y)/sqrt(var(x)*var(y)) shows how much x and y are correlated. This value is often referred to as r. The range of r is from -1 to +1  (Explained variation / Total variation)
