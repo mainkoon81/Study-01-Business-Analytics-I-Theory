@@ -129,9 +129,16 @@ A dummy variable can only take on two values 0/1. We would add dummy variables f
 
 
 -----------------------------------------------------------------------------------------------
-##  Data Preparation? 
+##  Data Preparation? cleaning + blending
 __Issue:__ Data Source, Type, Outlier, Format, Blending 
-
+#Understanding different data types
+  - Explore the differences between strings, integers, doubles, and bytes
+#Dealing with dirty and missing data as well as outliers
+  - Explore deduping, string parsing and replacements, and imputation
+#Manipulating rows and columns of data
+  - Explore transposing, aggregation, and cross tabulation
+#Blend data through joins and unions
+  - Explore fuzzy matching and spatial blending to help with spatial analysis
 
 
 
