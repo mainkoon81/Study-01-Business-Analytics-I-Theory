@@ -128,6 +128,10 @@ A dummy variable can only take on two values 0/1. We would add dummy variables f
 
 
 
+-----------------------------------------------------------------------------------------------
+##  Data Preparation? 
+__Issue:__ Data Source, Type, Outlier, Format, Blending 
+
 
 
 
