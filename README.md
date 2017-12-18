@@ -79,7 +79,7 @@ help businesses predict future behavior based on existing data such as "Given th
   - Step3. Model Selection 
 --------------------------------------------------------------------------------------------------------------------------------------  
 ## Predictive Analysis
-### 1) For Numeric & continuous outcome: [Linear Regression]
+### 1) [Linear Regression]: For Numeric & Continuous outcome
 >Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
 
 ```
@@ -125,14 +125,17 @@ __Issue C. Categorical Predictors:__ what will happen in linear regression when 
 
 A dummy variable can only take on two values 0/1. We would add dummy variables for one less than the number of unique values in the categorical variable. So if there are four categories, you'd add three dummy variables. For example, in Y=β0+β1(x1)+β2(x2), we add categorical variable 'C' that consists of 4 categories (c1,c2,c3,c4)-(0/1,0/1,0/1,0/1), then Y=β0+β1(x1)+β2(x2)+β3(c1)+β4(c3)+β5(c4). We don't create a variable for 'c2' because the equation needs a 'baseline value' that is not coded into a dummy variable. If a variable is in 'c2', then the value for all three of the dummy variables would be zero. The interpretation of the coefficient of 'c3', the dummy variable above, is that it represents the **"average difference"** between the response value in c3, compared to in c2. 
 
-### 2) Classification Method
- - >Logistic Regression
- - >Decision Trees
- - >Random Forests
- - >Boosted Models
+### 2) [Classification Model]: for Non-numeric & Discrete outcome (identifying what "group" a data point belong to)
+ - >Logistic Regression (Binary Grouping)
+ - >Decision Trees (Binary Grouping) 
+ - >Random Forests (Multi Grouping)
+ - >Boosted Models (Multi Grouping)
 
-__
+So which model the data fit the best? 
 
+__Logistic Regression:__ It’s part of a family of "GLM" for short. The formula is very similar to that of a linear regression; however, since the target variable is binary, instead of a continuous numeric variable, the target variable has to be modified to fit this GLM formula. 
+
+<img src="https://user-images.githubusercontent.com/31917400/34130015-3f9f4d40-e43e-11e7-9ea7-adabfa544d58.jpg" width="400" height="125" />
 
 
 
