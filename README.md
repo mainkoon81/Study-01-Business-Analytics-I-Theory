@@ -78,7 +78,7 @@ help businesses predict future behavior based on existing data such as "Given th
     - Non-Numeric Types: 1)binary, 2)Non-binary
   - Step3. Model Selection 
 --------------------------------------------------------------------------------------------------------------------------------------  
-
+## Predictive Analysis
 ### 1) For Numeric & continuous outcome: [Linear Regression]
 >Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
 
@@ -124,6 +124,77 @@ As for categorical variables, we cannot use a scatterplot to see whether a linea
 __Issue C. Categorical Predictors:__ what will happen in linear regression when we add a categorical variable to the mix of predictor variables? Simply assign a integer to each category and plug it into the model?  If we transform a category into a numeric variable, we are assuming a linear relationship exists between the response variable and the category number. Since the category number is generally assigned arbitrarily, this doesn't make sense. Instead we use "dummy" variable. 
 
 A dummy variable can only take on two values 0/1. We would add dummy variables for one less than the number of unique values in the categorical variable. So if there are four categories, you'd add three dummy variables. For example, in Y=β0+β1(x1)+β2(x2), we add categorical variable 'C' that consists of 4 categories (c1,c2,c3,c4)-(0/1,0/1,0/1,0/1), then Y=β0+β1(x1)+β2(x2)+β3(c1)+β4(c3)+β5(c4). We don't create a variable for 'c2' because the equation needs a 'baseline value' that is not coded into a dummy variable. If a variable is in 'c2', then the value for all three of the dummy variables would be zero. The interpretation of the coefficient of 'c3', the dummy variable above, is that it represents the **"average difference"** between the response value in c3, compared to in c2. 
+
+### 2) Classification Method
+ - >Logistic Regression
+ - >Decision Trees
+ - >Random Forests
+ - >Boosted Models
+
+__
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+### Statistics-knowledge
+
+**Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
+ - Range
+ - Interquartile Range (IQR)
+ - Standard Deviation
+ - Variance
+**Histogram** is the most common visual for quantitative data. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
