@@ -146,7 +146,7 @@ __
 
 
 -------------------------------------------------------------------------------------------
-### Statistics-knowledge
+### Extra: Statistics-knowledge
 
 **Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
  - Range
