@@ -137,6 +137,14 @@ __Logistic Regression:__ It’s part of a family of "GLM" for short. The formula
 
 <img src="https://user-images.githubusercontent.com/31917400/34130015-3f9f4d40-e43e-11e7-9ea7-adabfa544d58.jpg" width="400" height="125" />
 
+ - Issue A. **Selecting Variables for the Stepwise tool:** 
+   - It takes one input from the model object, and the other input from our original training set.
+   - 
+ 
+ 
+ The Stepwise Regression tool needs to figure out all of the possible variables it can calculate first and it takes this list of possible variables from the Logistic Regression Tool output. As you follow along, please remember to go back into the Logistic Regression Tool and select back all of the possible variables before you run the Stepwise Regression Tool. ("A choice of two different adjusted fit measures are provided to the user, the Akaike information criterion (or **AIC**) and the Bayesian information criterion (or **BIC**). These two measures are similar to one another, but the BIC places a larger penalty on the number of variables included in the model, typically resulting in a final model with fewer variables than is the case when the AIC is used.")
+ 
+ 
 
 
 
@@ -149,7 +157,7 @@ __Logistic Regression:__ It’s part of a family of "GLM" for short. The formula
 
 
 -------------------------------------------------------------------------------------------
-### Extra: Statistics-knowledge
+### Extra Tip: Statistical-knowledge
 
 **Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
  - Range
