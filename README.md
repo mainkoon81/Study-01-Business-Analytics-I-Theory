@@ -171,6 +171,7 @@ When we have data that follows a normal distribution, we can completely understa
  - measures of spread 
  - shape of distribution
  - outliers and plots of data
+ 
 3> Inferential Statistics is about using our collected data to draw conclusions to a larger population.
  - Population: our entire group of interest.
  - Parameter: numeric summary about a population
@@ -181,8 +182,44 @@ The way we perform inferential statistics is changing as technology evolves. Man
 4> Simpson's Paradox
  - the way we choose to look at our data can lead to the different result.
 <img src="https://user-images.githubusercontent.com/31917400/34156013-515bc6ec-e4b3-11e7-82ba-38e1f7a49784.jpg" width="400" height="125" /> 
+<img src="https://user-images.githubusercontent.com/31917400/34170221-f0ad18a8-e4e1-11e7-9517-056f9c4b5bbf.jpg" width="500" height="180" /> 
 
-5> A/B testing
+5> Discrete Random Variable "P(X=x)=f(x): y-value"
+ - x: outcome (whether **Numeric** or Non-numeric) just like "bins"
+ - P(X=x): probability of x: freq/total_freq...it's a ratio.
+ - f(x): probability function, thus... sum(f(x)) = 1
+ - E[x] = sum(x*f(x))
+ - var(x) = E[x^2]-E[x]^2
+ - E[xy] = sum(xy*f(x,y)) = sum(x*f(x))*sum(y*f(y))
+ - cov(x,y) = E[xy]-E[x]E[y]
+ - Popular Discrete Distribution
+   - **Bernoulli: B(p)**
+     - x: freq or NO.of success or NO.of failure, thus x=1 or 0
+     - N = 1
+     - P(X=1)=f(x) = **p**, P(X=0)=f(x) = **1-p** = q
+     - E[x] = p
+     - var(x) = pq
+   - **Binomial: B(n,p)**
+     - x: freq or NO.of success or NO.of failure, thus x=0,1,2,3,4.....
+     - N = n (independent)
+     - P(X=x*success)=f(x) = nCx*p^x*q^(n-x)
+     - E[x] = n*p
+     - var(x) = n*pq
+   - Poisson
+   - Geometric
+   - Generalized Geometric(Negative Binomial)
+   - Hyper Geometric
+   - **Uniform: U(n)**
+     - x: freq or No.of any outcome of the "dice"
+     - N = n (independent)
+     - P(X=x)=f(x) = 1/n
+     - E[x] = (n+1)/2
+6> Continuous Randome Variable "P(X<=x)=F(x): area"
+
+ 
+
+
+0000> A/B testing
  - When a company wants to test new versions of a webpage? 
  - A/B tests are used to test changes on a web page by running an experiment where a control group sees the old version, while the experiment group sees the new version. A **metric** is then chosen to measure the level of engagement from users in each group. These results are then used to judge whether one version is more effective than the other. A/B testing is very much like hypothesis testing.
    - Null Hypothesis: The new version is no better, or even worse, than the old version (H0: 'new' =< 'old')
