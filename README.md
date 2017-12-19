@@ -202,7 +202,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
    - **Binomial: B(n,p)**
      - x: freq or NO.of success or NO.of failure, thus x=0,1,2,3,4.....
      - N = n (independent)
-     - P(X=x*success)=f(x) = nCx*p^x*q^(n-x)
+     - P(X=x*success)=f(x) = nCx * p^x * q^(n-x)
      - E[x] = n*p
      - var(x) = n*pq
    - Poisson
@@ -214,7 +214,21 @@ The way we perform inferential statistics is changing as technology evolves. Man
      - N = n (independent)
      - P(X=x)=f(x) = 1/n
      - E[x] = (n+1)/2
+
 6> Continuous Randome Variable "P(X<=x)=F(x): area"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
