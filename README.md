@@ -217,7 +217,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 6> Continuous Randome Variable "P(X<=x)=F(x): area"
 
-
+7> Examples
 
 
 
