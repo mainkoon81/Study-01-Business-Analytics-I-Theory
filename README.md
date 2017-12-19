@@ -159,15 +159,31 @@ __Logistic Regression:__ It’s part of a family of "GLM" for short. The formula
 -------------------------------------------------------------------------------------------
 ### Extra Tip: Statistical-knowledge
 
-**Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
+1> **Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
  - Range
  - Interquartile Range (IQR)
  - Standard Deviation
  - Variance
-**Histogram** is the most common visual for quantitative data. 
+When we have data that follows a normal distribution, we can completely understand our dataset using the 'mean' and 'SD'. However, if our dataset is skewed or when we have outliers, the 5 number summary (min,IQR,max) might be better to summarize our dataset.
 
+2> Descriptive statistics is about describing our collected data.
+ - measures of center 
+ - measures of spread 
+ - shape of distribution
+ - outliers and plots of data
+3> Inferential Statistics is about using our collected data to draw conclusions to a larger population.
+ - Population: our entire group of interest.
+ - Parameter: numeric summary about a population
+ - Sample: subset of the population
+ - Statistic: numeric summary about a sample
+The way we perform inferential statistics is changing as technology evolves. Many career paths involving Machine Learning and Artificial Intelligence are aimed at using collected data to draw conclusions about entire populations at an individual level. 
 
+4> Simpson's Paradox
+ - the way we choose to look at our data can lead to the different result.
+<img src="https://user-images.githubusercontent.com/31917400/34156013-515bc6ec-e4b3-11e7-82ba-38e1f7a49784.jpg" width="400" height="125" /> 
 
+5> A/B testing
+ - 
 
 
 
