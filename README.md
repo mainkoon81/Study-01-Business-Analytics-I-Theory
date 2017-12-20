@@ -195,13 +195,13 @@ The way we perform inferential statistics is changing as technology evolves. Man
  - Popular Discrete Distribution
    - **Bernoulli: B(p)**
      - x: freq or NO.of success or NO.of failure, thus x=1 or 0
-     - N = 1
+     - N = 1 :coin-size
      - P(X=1)=f(x) = **p**, P(X=0)=f(x) = **1-p** = q
      - E[x] = p
      - var(x) = pq
    - **Binomial: B(n,p)**
      - x: freq or NO.of success or NO.of failure, thus x=0,1,2,3,4.....
-     - N = n (independent)
+     - N = n (independent) :coin-size
      - P(X=x*success)=f(x) = nCx * p^x * q^(n-x)
      - E[x] = n*p
      - var(x) = n*pq
