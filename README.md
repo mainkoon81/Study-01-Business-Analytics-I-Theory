@@ -219,6 +219,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 7> Examples
 
+## SO...Not Enough Samples ? 
 8> Bootstrapping and C.I.
 
 
