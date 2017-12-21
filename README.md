@@ -224,7 +224,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 
 ## SO...Not Enough Samples ? 
->  Estimation techniques for finding "good statistics"
+>Estimation techniques for finding "good statistics"
  - Maximum Likelihood Estimation
  - Method of Moments Estimation
  - Bayesian Estimation
