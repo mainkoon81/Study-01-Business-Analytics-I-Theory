@@ -229,7 +229,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
  - Method of Moments Estimation
  - Bayesian Estimation
 
-When estimating population parameters, we build the confidence intervals.
+*When estimating population parameters, we build the confidence intervals.
  - Basically;
    - Increasing your sample size will decrease the width of your confidence interval (by the law of large numbers).
    - Increasing your confidence level (say 95% to 99%) will increase the width of your confidence interval. 
@@ -241,7 +241,7 @@ When estimating population parameters, we build the confidence intervals.
 
 All of these formula have underlying "assumptions" (Central Limit Theorem regarding the distribution of statistics) that may or maynot be true. But Bootstrapping does not have the assumptions of these intervals. Bootstrapping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same result.    
 
-> Confidence intervals or Hypothesis tests: It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
+> Confidence intervals and Hypothesis tests: It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
 
 > Machine learning techniques: It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
@@ -271,9 +271,8 @@ All of these formula have underlying "assumptions" (Central Limit Theorem regard
    - Alternative Hypothesis: The new version is better than the old version (H1: 'new' > 'old')
  - If we reject the null hypothesis, the results would suggest launching the change. These tests can be used for a wide variety of changes to see what change maximizes your metric the most.
  - A/B testing also has its drawbacks: 
-   - Type I. (Says True, but actually False) Novelty Effect: Existing users may give an unfair advantage to the new version, because they’re excited or drawn to the change, even if it isn’t any better in the long run.
-   - Type II. (Says False, but actually True) Change Aversion: Existing users may give an unfair advantage to the old version, simply because they are unhappy with change, even if it’s ultimately for the better.
-
+   - Type I. (Says False, but H0 actually True) Change Aversion or `false positives`: Existing users may give an unfair advantage to the old version, simply because they are unhappy with change, even if it’s ultimately for the better.
+   - Type II. (Says True, but H0 actually False) Novelty Effect or `false negatives`: Existing users may give an unfair advantage to the new version, because they’re excited or drawn to the change, even if it isn’t any better in the long run.
 
 
 
