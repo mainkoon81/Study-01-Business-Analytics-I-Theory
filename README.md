@@ -238,7 +238,7 @@ When estimating population parameters, we build the confidence intervals.
  - Capturing the difference in pop-mean/proportion
 <img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" />  
 
-All of these formula have underlying "assumptions" (Central Limit Theorem) that may or maynot be true. But Bootstrapping does not have the assumptions of these intervals. Bootstrapping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same result.    
+All of these formula have underlying "assumptions" (Central Limit Theorem regarding the distribution of statistics) that may or maynot be true. But Bootstrapping does not have the assumptions of these intervals. Bootstrapping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same result.    
 
 > Confidence intervals or Hypothesis tests: It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
 
