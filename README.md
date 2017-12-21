@@ -223,11 +223,12 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 
 
-
-
-
-
 ## SO...Not Enough Samples ? 
+>  Estimation techniques for finding "good statistics"
+ - Maximum Likelihood Estimation
+ - Method of Moments Estimation
+ - Bayesian Estimation
+
 When estimating population parameters, we build the confidence intervals.
  - Basically;
    - Increasing your sample size will decrease the width of your confidence interval (by the law of large numbers).
