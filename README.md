@@ -257,7 +257,9 @@ All of these formula have underlying "assumptions" (Central Limit Theorem regard
  - Testing the difference between population proportions (Two sample z-test)
  - ETC. instead of memorizing how to perform all of these tests, we can find the statistics that best estimates the parameter(s) we want to estimate, we can bootstrap to simulate the sampling distribution. Then we can use our sampling distribution to assist in choosing the appropriate hypothesis.
  
- 
+> Once we set up 'H0', we need to use our data to figure out which hypothesis is true. There are two ways to choose. 
+ - Using C.I.: where we simulate sampling distribution of our statistics, then we could see if our hypothesis is consistent with what we observe in the sampling distribution.  
+ - Simulating what we believe to be a possible under the H0, then seeing if our data is consistent with that.  
 
 
 
