@@ -221,10 +221,14 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 ## SO...Not Enough Samples ? 
 When estimating population parameters, we build the confidence intervals.  
- - to capturing pop-mean/proportion
+ - Capturing pop-mean/proportion
 <img src="https://user-images.githubusercontent.com/31917400/34266269-6c003960-e670-11e7-857f-3a755839c4b9.jpg" width="200" height="150" />  
- - to capturing the difference in pop-mean/proportion
+
+ - Capturing the difference in pop-mean/proportion
 <img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" />  
+
+
+
 
 8> Bootstrapping and C.I.
 
