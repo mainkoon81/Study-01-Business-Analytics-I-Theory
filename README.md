@@ -250,8 +250,14 @@ All of these formula have underlying "assumptions" (Central Limit Theorem regard
 
 
 9> Hypothesis testing
-
-
+ - Testing a population mean (One sample t-test).
+ - Testing the difference in means (Two sample t-test)
+ - Testing the difference before and after some treatment on an the same individual (Paired t-test)
+ - Testing a population proportion (One sample z-test)
+ - Testing the difference between population proportions (Two sample z-test)
+ - ETC. instead of memorizing how to perform all of these tests, we can find the statistics that best estimates the parameter(s) we want to estimate, we can bootstrap to simulate the sampling distribution. Then we can use our sampling distribution to assist in choosing the appropriate hypothesis.
+ 
+ 
 
 
 
