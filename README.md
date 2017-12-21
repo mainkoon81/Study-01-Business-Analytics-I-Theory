@@ -220,7 +220,10 @@ The way we perform inferential statistics is changing as technology evolves. Man
 7> Examples
 
 ## SO...Not Enough Samples ? 
-When estimating population parameters, we build the confidence intervals.  
+When estimating population parameters, we build the confidence intervals.
+ - Basically;
+   - Increasing your sample size will decrease the width of your confidence interval.
+   - Increasing your confidence level (say 95% to 99%) will increase the width of your confidence interval. 
  - Capturing pop-mean/proportion
 <img src="https://user-images.githubusercontent.com/31917400/34266269-6c003960-e670-11e7-857f-3a755839c4b9.jpg" width="200" height="150" />  
 
@@ -228,6 +231,7 @@ When estimating population parameters, we build the confidence intervals.
 <img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" />  
 
 All of these formula have underlying "assumptions" that may or maynot be true. But Bootstrapping does not have the assumptions of these intervals. Bootstrpping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same result.    
+
 
 
 
