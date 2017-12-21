@@ -227,6 +227,7 @@ When estimating population parameters, we build the confidence intervals.
  - Capturing the difference in pop-mean/proportion
 <img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" />  
 
+All of these formula have underlying "assumptions" that may or maynot be true. But Bootstrapping does not have the assumptions of these intervals. Bootstrpping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same result.    
 
 
 
