@@ -219,6 +219,14 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 7> Examples
 
+
+
+
+
+
+
+
+
 ## SO...Not Enough Samples ? 
 When estimating population parameters, we build the confidence intervals.
  - Basically;
@@ -236,13 +244,11 @@ All of these formula have underlying "assumptions" (Central Limit Theorem) that 
 
 > Machine learning techniques: It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
-## Hypothesis test
-
-
-
-
-
 8> Bootstrapping and C.I.
+
+
+
+9> Hypothesis testing
 
 
 
