@@ -240,7 +240,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
  - Method of Moments Estimation
  - Bayesian Estimation
  - *Aggregate approach (CI, Hypothesis_test)
- - Individual approach (machine learning, but do need more samples, doesn't care finding "good statistics")
+ - Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 > Confidence intervals and Hypothesis tests: It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
 
 > Machine learning techniques: It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
@@ -283,7 +283,9 @@ One of the most important aspects of interpreting any statistical results (and o
  - Is my sample representative of the population?
  - What is the impact of large sample size on my result? (with large sizes, everything will be statistically significant..then we'd always choose H1...Type-I Error) 
 
-## 
+## Multi-testing Correction
+When performing more than one hypothesis test, your type-I error compounds. In order to correct for this, a common technique is called the `Bonferroni correction`. This correction is very conservative, but says that your new type-I error rate should be the error rate you actually want divided by the number of tests you are performing. Therefore, if you would like to hold a **type-I error rate of 1%** (99% confidence or alpha=0.01) for each of 20 hypothesis tests, the Bonferroni corrected rate would be 0.01/20 = 0.0005. This would be the new rate you should use as your comparison to the p-value for each of the 20 tests to make your decision.
+
 
 
 
