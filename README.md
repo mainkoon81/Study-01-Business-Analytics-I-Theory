@@ -232,8 +232,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 
 
-
-
+# A/B Testing
 ## Intro. SO...Not Enough Samples ? 
 >Estimation techniques for finding "good statistics"
  - Maximum Likelihood Estimation
@@ -283,16 +282,10 @@ One of the most important aspects of interpreting any statistical results (and o
  - Is my sample representative of the population?
  - What is the impact of large sample size on my result? (with large sizes, everything will be statistically significant..then we'd always choose H1...Type-I Error) 
 
-## Multi-testing Correction
+#### Multi-testing Correction
 When performing more than one hypothesis test, your type-I error compounds. In order to correct for this, a common technique is called the `Bonferroni correction`. This correction is very conservative, but says that your new type-I error rate should be the error rate you actually want divided by the number of tests you are performing. Therefore, if you would like to hold an **allowable type-I error rate of 1%** (99% confidence means alpha=0.01) for each of 20 hypothesis tests, the Bonferroni corrected rate would be 0.01/20 = 0.0005. This would be the new rate you should use as your comparison to the p-value for each of the 20 tests to make your decision.
 
-
-
-
- 
-
-
-0000> A/B testing
+## A/B testing 
  - When a company wants to test new versions of a webpage? 
  - A/B tests are used to test changes on a web page by running an experiment where a control group sees the old version, while the experiment group sees the new version. A **metric** is then chosen to measure the level of engagement from users in each group. These results are then used to judge whether one version is more effective than the other. A/B testing is very much like hypothesis testing.
    - Null Hypothesis: The new version is no better, or even worse, than the old version (H0: 'new' =< 'old')
