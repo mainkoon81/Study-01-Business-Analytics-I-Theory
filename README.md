@@ -126,23 +126,28 @@ __Issue C. Categorical Predictors:__ what will happen in linear regression when 
 A dummy variable can only take on two values 0/1. We would add dummy variables for one less than the number of unique values in the categorical variable. So if there are four categories, you'd add three dummy variables. For example, in Y=β0+β1(x1)+β2(x2), we add categorical variable 'C' that consists of 4 categories (c1,c2,c3,c4)-(0/1,0/1,0/1,0/1), then Y=β0+β1(x1)+β2(x2)+β3(c1)+β4(c3)+β5(c4). We don't create a variable for 'c2' because the equation needs a 'baseline value' that is not coded into a dummy variable. If a variable is in 'c2', then the value for all three of the dummy variables would be zero. The interpretation of the coefficient of 'c3', the dummy variable above, is that it represents the **"average difference"** between the response value in c3, compared to in c2. 
 
 ### 2) [Classification Model]: for Non-numeric & Discrete outcome (identifying what "group" a data point belong to)
- - >Logistic Regression (Binary Grouping)
- - >Decision Trees (Binary Grouping) 
- - >Random Forests (Multi Grouping)
- - >Boosted Models (Multi Grouping)
+ - >Logistic Regression (Binary-classification)
+ - >Decision Trees (Binary-classification) 
+ - >Random Forests (Multi-classification)
+ - >Boosted Models (Multi-classification)
 
 So which model the data fit the best? 
 
-__Logistic Regression:__ It’s part of a family of "GLM" for short. The formula is very similar to that of a linear regression; however, since the target variable is binary, instead of a continuous numeric variable, the target variable has to be modified to fit this GLM formula. 
+### Binary-Classification
+__1. Logistic Regression:__ It’s part of a family of "GLM" for short. The formula is very similar to that of a linear regression; however, since the target variable is binary, instead of a continuous numeric variable, the target variable has to be modified to fit this GLM formula. 
 
 <img src="https://user-images.githubusercontent.com/31917400/34130015-3f9f4d40-e43e-11e7-9ea7-adabfa544d58.jpg" width="400" height="125" />
 
  - Issue A. **Selecting Variables for the Stepwise tool:** 
-   - It takes one input from the model object, and the other input from our original training set.
-   - 
- 
- 
- The Stepwise Regression tool needs to figure out all of the possible variables it can calculate first and it takes this list of possible variables from the Logistic Regression Tool output. As you follow along, please remember to go back into the Logistic Regression Tool and select back all of the possible variables before you run the Stepwise Regression Tool. ("A choice of two different adjusted fit measures are provided to the user, the Akaike information criterion (or **AIC**) and the Bayesian information criterion (or **BIC**). These two measures are similar to one another, but the BIC places a larger penalty on the number of variables included in the model, typically resulting in a final model with fewer variables than is the case when the AIC is used.")
+   - The stepwise tool takes one input from the **model object**, and the other input from our **original training set.**
+   - The Stepwise Regression tool needs to figure out all of the possible variables it can calculate first and it takes this list of possible variables from the Logistic Regression Tool output. 
+   - A choice of two different adjusted fit measures are provided to the user:
+     - the Akaike information criterion (or **AIC**)
+     - the Bayesian information criterion (or **BIC**)
+     - These two measures are similar to one another, but the BIC places a larger penalty on the number of variables included in the model, typically resulting in a final model with fewer variables than is the case when the AIC is used.
+
+
+
  
  
 
