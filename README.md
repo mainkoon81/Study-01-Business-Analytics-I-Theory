@@ -161,6 +161,7 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. I
  - Once the first split has happened, **each split is treated separately**. 
  - Considering only the 'W_Peanuts' group for the second split and the 'W/O_Peanuts' group separately, how would the tree predict the actual result? What is the chance the 'blue M&M' is eaten? If we trace along the path for the 'blue', we can see that at the terminal node, there is 90% chance of being eaten. 
 <img src="https://user-images.githubusercontent.com/31917400/34521746-4fcf16fa-f087-11e7-89af-179764cffa14.jpg" /> 
+<img src="https://user-images.githubusercontent.com/31917400/34543709-41b59c58-f0da-11e7-893e-b97d3dd2146b.jpg" /> 
 
  - Issue A. `DecisionTree tool` requires parameter-setting and model-customization.
    - reading the output report: 
@@ -199,7 +200,7 @@ __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary cl
  - Each individual tree created still has overfitting issues, but when you look at the results as a whole, the overfitting gets averaged out by all of the other trees.
 <img src="https://user-images.githubusercontent.com/31917400/34543354-4efece18-f0d8-11e7-9168-29710e567562.jpg" /> 
 
- 
+ - For example, if applying to this model to a particular employee  
 
 
 
