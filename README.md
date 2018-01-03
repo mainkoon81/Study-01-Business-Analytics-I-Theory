@@ -170,7 +170,6 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
      - we can see how the model is created and where it decides to split and how many records fall within each 'Yes/No' at each split.  
      - **confusion matrix:** A matrix (or table) that lists out all of the possible prediction results when we validate our model against our validation set. This confusion matrix is one of the best methods to review the accuracy and precision of your model as well as to understand any model bias in classifying your data points. It shows how many of the data point fall within the correct terminal node. Here 97% of the nodes are classified correctly while 68% of the Yes's are correct, and ... so When classifying all Yes's against the Cross Validation sample, it tells the overall accuracy-68%. This matrix helps determine whether there might be biases within our data or if it's too skewed to one side or the other. 
 <img src="https://user-images.githubusercontent.com/31917400/34523838-039c5f2c-f091-11e7-9ac3-cd88ea977acd.jpg" width="700" height="400" />    
-<img src="https://user-images.githubusercontent.com/31917400/34529071-b673fcf2-f0a2-11e7-8454-db8e5c919a4a.jpg" width="700" height="400" /> 
  
  - comparing models against each other: 
    - What we are going to do look for is the overall accuracy of each of the models as well as the lift/gains chart.
