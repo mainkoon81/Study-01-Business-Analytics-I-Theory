@@ -134,7 +134,7 @@ A dummy variable can only take on two values 0/1. We would add dummy variables f
 So which model the data fit the best? 
 
 ### Binary-Classification
-__1. Logistic Regression:__ It’s part of a family of "GLM" for short. The formula is very similar to that of a linear regression; however, since the target variable is binary, instead of a continuous numeric variable, the target variable has to be modified to fit this GLM formula. 
+__1. Logistic Regression:__ Logistic Regression is a statistical method used to predict binary outcomes by analyzing the outcome’s relationship with one or more predictor variables. It’s part of a family of "GLM" for short. The formula is very similar to that of a linear regression; however, since the target variable is binary, instead of a continuous numeric variable, the target variable has to be modified to fit this GLM formula. 
 
 <img src="https://user-images.githubusercontent.com/31917400/34130015-3f9f4d40-e43e-11e7-9ea7-adabfa544d58.jpg" width="400" height="125" />
 
@@ -172,18 +172,21 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
 <img src="https://user-images.githubusercontent.com/31917400/34523838-039c5f2c-f091-11e7-9ac3-cd88ea977acd.jpg" width="700" height="400" />    
  
  - Issue B. `Model Comparison tool` compares models against each other: 
-   - The lift chart is based on aggregating data into several groups. These groups are ordered based on the predicted probability of a favorable response for each model. The response is then compared to what would be expected if the selection of prospects was done randomly. 
-   - The gain chart is
+   - Apply the model to the validation sample and observe how accurately the model predicts the outcomes. This step helps avoid overfitting and helps you understand how accurate your predictions will be on new data.
+   - Lift is a measure of the performance of a predictive model calculated as the ratio b/w the results obtained with and w/o the predictive model. The lift chart is based on aggregating data into several groups. These groups are ordered based on the predicted probability of a favorable response for each model. For example, the lift chart shows how much more likely we are to receive respondents than if we contact a random sample of customers - by contacting only 10% of customers based on the model we will reach 3 times as many respondents as if we use no model. The greater the area between the lift curve and the baseline, the better the model. 
+   - In the gain chart, y-axis shows the percentage of positive responses.
    - The Precision vs Recall chart is 
-   - The ROC curve is
+   - The ROC curve is (http://www.dataschool.io/roc-curves-and-auc-explained/) 
 <img src="https://user-images.githubusercontent.com/31917400/34531390-01e32102-f0aa-11e7-81b5-5525deb26c60.jpg" /> 
 
-
+ - Issue C. `Score tool` 
+   - Apply the model to a new dataset to make predictions. This dataset should have all the predictor variable values, which are passed through the model to predict the unknown target variable value. The prediction will be a number between 0 and 1, representing the likelihood of positive outcome.
+   - We have our model chosen so the only thing we have to do is to predict who is going redeem a future marketing campaign. When we put a model into production it is referred to as scoring the model. Which simply means taking each individual record and applying the model to them which gives their probability to redeem the offer.
+   - Now we can answer to:
+     - Create a dataset that contains only the individuals who have a greater than 50% probability of redeeming an offer.
+     - Only include the Customer Key, First and Last Names, and the likelihood they will redeem an offer.
+     - Sort the data with the highest likelihood individuals are at the top.
  
- 
- 
-
-
 ### Non-Binary-Classification
 __1. 
 
