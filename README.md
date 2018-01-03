@@ -155,14 +155,22 @@ __1. Logistic Regression:__ It’s part of a family of "GLM" for short. The form
    - so we need `Model comparison tool` 
 
 __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. This results in a comparison b/w each of the different possible outcomes. For example, let's see if we can predict whether specific M&M will get eaten. 
- - one predictor - 'color': this split is choosen because it produces the `**largest difference**` in percent eatean b/w two groups. 
- - add the second predictors - 'flavour': Only possible split is 'W_Peanuts' vs 'W/O_Peanuts'. 
+ - Split (one predictor) - 'color': this split is choosen because it produces the `*largest difference*` in percent eatean b/w two groups. 
+ - Split (add the second predictors) - 'flavour': Only possible split is 'W_Peanuts' vs 'W/O_Peanuts'. 
  - so which split would happen first? Since 'flavor' has a larger gap, it would cause the first split.
- - Once the first split has happened, each split is treated separately. 
+ - Once the first split has happened, **each split is treated separately**. 
  - Considering only the 'W_Peanuts' group for the second split and the 'W/O_Peanuts' group separately, how would the tree predict the actual result? What is the chance the 'blue M&M' is eaten? If we trace along the path for the 'blue', we can see that at the terminal node, there is 90% chance of being eaten. 
 <img src="https://user-images.githubusercontent.com/31917400/34521746-4fcf16fa-f087-11e7-89af-179764cffa14.jpg" /> 
 
-
+ - Issue A. `DecisionTree tool` requires parameter-setting and model-customization.
+   - reading the output report: 
+     - **Root Node Error:** A percentage of how many of the data points went to the incorrect terminal node (predicted incorrectly) when all of the data points are validated against themselves within the entire training set (the Estimation dataset). When we cross-validate out data against our model, How many errors occur? Within that estimation sample (model) and within that validation sample, how many are correctly predicted or how many are errored out? 
+     - **Pruning table:**  Lists out the levels in the decision tree with their related error terms with cross-validation samples. It shows how many levels there are to the decision tree and some error charms with cross-validation sample. 
+   - reading the output Interactive:
+     - we can see how the model is created and where it decides to split and how many records fall within each 'Yes/No' at each split.  
+     - **confusion matrix:** A matrix (or table) that lists out all of the possible prediction results when we validate our model against our validation set. This confusion matrix is one of the best methods to review the accuracy and precision of your model as well as to understand any model bias in classifying your data points.
+<img src="https://user-images.githubusercontent.com/31917400/34523420-56e494d0-f08f-11e7-9b75-a8cd8dc8b7a9.jpg" width="600" height="400" />     
+ 
 
  
  
