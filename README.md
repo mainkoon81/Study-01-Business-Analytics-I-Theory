@@ -133,7 +133,7 @@ A dummy variable can only take on two values 0/1. We would add dummy variables f
 
 So which model the data fit the best? 
 
-### Binary-Classification
+### Binary-Classification (Binary Response variable)
 __1. Logistic Regression:__ Logistic Regression is a statistical method used to predict binary outcomes by analyzing the outcome’s relationship with one or more predictor variables. It’s part of a family of "GLM" for short. The formula is very similar to that of a linear regression; however, since the target variable is binary, instead of a continuous numeric variable, the target variable has to be modified to fit this GLM formula. 
 
 <img src="https://user-images.githubusercontent.com/31917400/34130015-3f9f4d40-e43e-11e7-9ea7-adabfa544d58.jpg" width="400" height="125" />
@@ -188,7 +188,7 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. I
      - Only include the Customer Key, First and Last Names, and the likelihood they will redeem an offer.
      - Sort the data with the highest likelihood individuals are at the top.
  
-### Non-Binary-Classification
+### Non-Binary-Classification (Non-Binary Response variable)
 >For example, in our company, the insurance policy has a reward based benefit offer. This benefit varies depending on what mode of transportation an employee takes to work. Our company ran a survey to understand the mode of transportation of our employees and only 60% responded. What our management would like to do is **predict the mode of transportation of the other 40% of employees.** This would help us better estimate what benefits we can offer.
 
 __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary classification as well, 'DecisionTree' is prone to an error called over-fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should. A technique that helps to eliminate this issues is the RandomForest Model.
@@ -203,8 +203,8 @@ __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary cl
  - For example, if applying to this model to a particular employee who is 1.5 miles away from work (one of the predictors). This is how we average it out ! 
 <img src="https://user-images.githubusercontent.com/31917400/34544108-3fa2d3de-f0dc-11e7-9ba3-bddf146c6056.jpg" /> 
 
- - Issue A. ` `
-
+ - Issue A. `Forest Model tool` 
+<img src="https://user-images.githubusercontent.com/31917400/34544525-ac949d72-f0de-11e7-95d5-11cad480983c.jpg" width="240" height="150" /> 
 
 
 
