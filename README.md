@@ -154,7 +154,7 @@ __1. Logistic Regression:__ Logistic Regression is a statistical method used to 
    - The `Stepwise tool` helps us reduce and figure out which predictor variables have a good chance of being in the model, but it is not a tool that can automatically find all of the appropriate predictor variables in one run.
    - so we need `Model comparison tool` 
 
-__2. Decision Tree:__ It analyzes the data as if it was a series of decisions. This results in a comparison b/w each of the different possible outcomes. For example, let's see if we can predict whether specific M&M will get eaten. 
+__2. Decision Tree:__ It analyzes the data as if it was a series of decisions. It does this by splitting the data and creating the largest difference at the percent b/w the target group. This results in a comparison b/w each of the different possible outcomes. For example, let's see if we can predict whether specific M&M will get eaten. 
  - Split (one predictor) - 'color': this split is choosen because it produces the `*largest difference*` in percent eatean b/w two groups. 
  - Split (add the second predictors) - 'flavour': Only possible split is 'W_Peanuts' vs 'W/O_Peanuts'. 
  - so which split would happen first? Since 'flavor' has a larger gap, it would cause the first split.
@@ -190,7 +190,10 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
 ### Non-Binary-Classification
 >For example, in our company, the insurance policy has a reward based benefit offer. This benefit varies depending on what mode of transportation an employee takes to work. Our company ran a survey to understand the mode of transportation of our employees and only 60% responded. What our management would like to do is **predict the mode of transportation of the other 40% of employees.** This would help us better estimate what benefits we can offer.
 
-__1. RandomForest Model:__ 
+__1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary classification as well, 'DecisionTree' is prone to an error called over-fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should. A technique that helps to eliminate this issues is the RandomForest Model.
+ - A Forest Model creates hundreds of trees, called an ensemble of decision trees.
+ - Each tree is created by different randomly generated chunks of the original data.
+ - It looks at the results as a whole to make a prediction.
 
 
 
