@@ -188,7 +188,9 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
      - Sort the data with the highest likelihood individuals are at the top.
  
 ### Non-Binary-Classification
-__1. 
+>For example, in our company, the insurance policy has a reward based benefit offer. This benefit varies depending on what mode of transportation an employee takes to work. Our company ran a survey to understand the mode of transportation of our employees and only 60% responded. What our management would like to do is **predict the mode of transportation of the other 40% of employees.** This would help us better estimate what benefits we can offer.
+
+__1. RandomForest Model:__ 
 
 
 
