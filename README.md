@@ -200,10 +200,10 @@ __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary cl
  - Each individual tree created still has overfitting issues, but when you look at the results as a whole, the overfitting gets averaged out by all of the other trees.
 <img src="https://user-images.githubusercontent.com/31917400/34543354-4efece18-f0d8-11e7-9168-29710e567562.jpg" /> 
 
- - For example, if applying to this model to a particular employee who is 1.5 miles away from work.  
+ - For example, if applying to this model to a particular employee who is 1.5 miles away from work (one of the predictors). This is how we average it out ! 
 <img src="https://user-images.githubusercontent.com/31917400/34544108-3fa2d3de-f0dc-11e7-9ba3-bddf146c6056.jpg" /> 
 
-
+ - Issue A. ` `
 
 
 
