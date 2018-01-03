@@ -155,7 +155,7 @@ __1. Logistic Regression:__ It’s part of a family of "GLM" for short. The form
    - so we need `Model comparison tool` 
 
 __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. This results in a comparison b/w each of the different possible outcomes. For example, let's see if we can predict whether specific M&M will get eaten. 
- - one predictor - 'color': this split is choosen because it produces the largest difference in percent eatean b/w two groups. 
+ - one predictor - 'color': this split is choosen because it produces the `**largest difference**` in percent eatean b/w two groups. 
  - add the second predictors - 'flavour': Only possible split is 'W_Peanuts' vs 'W/O_Peanuts'. 
  - so which split would happen first? Since 'flavor' has a larger gap, it would cause the first split.
  - Once the first split has happened, each split is treated separately. 
