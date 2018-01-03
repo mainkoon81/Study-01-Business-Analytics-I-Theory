@@ -192,8 +192,14 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. I
 
 __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary classification as well, 'DecisionTree' is prone to an error called over-fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should. A technique that helps to eliminate this issues is the RandomForest Model.
  - A Forest Model creates hundreds of trees, called an ensemble of decision trees.
+ - The first tree will be created with a random subset of the original data. We will also use the different combination of predictors to assist the splits. Its splits are choosen at places to produce the largest differences in percent of the mode of transportation.
+ - The second tree will then do the same thing with different random subset of data and with different predictors. This will continue to occur until the number of trees specified has been created(default = 500).  
  - Each tree is created by different randomly generated chunks of the original data.
  - It looks at the results as a whole to make a prediction.
+ - Each individual tree created still has overfitting issues, but when you look at the results as a whole, the overfitting gets averaged out by all of the other trees.
+<img src="https://user-images.githubusercontent.com/31917400/34543354-4efece18-f0d8-11e7-9168-29710e567562.jpg" /> 
+
+ 
 
 
 
