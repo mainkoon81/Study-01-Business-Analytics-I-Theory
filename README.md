@@ -178,7 +178,7 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
    - The gain chart is
    - The Precision vs Recall chart is 
    - The ROC curve is
-<img src="https://user-images.githubusercontent.com/31917400/34529071-b673fcf2-f0a2-11e7-8454-db8e5c919a4a.jpg" width="700" height="400" /> 
+<img src="https://user-images.githubusercontent.com/31917400/34530869-5c7426b8-f0a8-11e7-92b7-fcdaf528a1ac.jpg" /> 
 
 
  
