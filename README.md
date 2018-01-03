@@ -168,10 +168,11 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
      - **Pruning table:**  Lists out the levels in the decision tree with their related error terms with cross-validation samples. It shows how many levels there are to the decision tree and some error charms with cross-validation sample. 
    - reading the output Interactive:
      - we can see how the model is created and where it decides to split and how many records fall within each 'Yes/No' at each split.  
-     - **confusion matrix:** A matrix (or table) that lists out all of the possible prediction results when we validate our model against our validation set. This confusion matrix is one of the best methods to review the accuracy and precision of your model as well as to understand any model bias in classifying your data points.
+     - **confusion matrix:** A matrix (or table) that lists out all of the possible prediction results when we validate our model against our validation set. This confusion matrix is one of the best methods to review the accuracy and precision of your model as well as to understand any model bias in classifying your data points. It shows how many of the data point fall within the correct terminal node. Here 97% of the nodes are classified correctly while 68% of the Yes's are correct, and ...This matrix helps determine whether there might be biases within our data or if it's too skewed to one side or the other. 
 <img src="https://user-images.githubusercontent.com/31917400/34523838-039c5f2c-f091-11e7-9ac3-cd88ea977acd.jpg" width="700" height="400" />     
  
-
+ - validation:
+ 
  
  
 
