@@ -146,20 +146,30 @@ __1. Logistic Regression:__ It’s part of a family of "GLM" for short. The form
      - the Bayesian information criterion (or **BIC**)
      - These two measures are similar to one another, but the BIC places a larger penalty on the number of variables included in the model, typically resulting in a final model with fewer variables than is the case when the AIC is used.
    - Steps to Build the Model in Alteryx
-     - Use an Input tool to bring in the 'HotelLoyaltyData.csv' file found at the bottom of the page.
-     - Use a Select tool to set the each variable to the correct data type.
-     - Use the Create Samples tool to create samples of dataset and set 70% for the estimation sample and 30% for the validation sample.
-     - Use the Logistic Regression tool and set the target variable as Redeemer
+     - Use a `Select tool` to set the each variable to the correct data type.
+     - Use the `Create Samples tool` to create samples of dataset and set 70% for the estimation sample and 30% for the validation sample.
+     - Use the `Logistic Regression tool` and set the target variable as Redeemer
      - Select all variables besides Customer Key, First Name, Last Name, and Redeemer as predictor variables.
-     - Add a Stepwise tool
+     - Add a `Stepwise tool`
    - The `Stepwise tool` helps us reduce and figure out which predictor variables have a good chance of being in the model, but it is not a tool that can automatically find all of the appropriate predictor variables in one run.
-   - 
+   - so we need `Model comparison tool` 
+
+__2. Decision Tree:__ It analyzes the data as if it was a series of decisions. This results in a comparison b/w each of the different possible outcomes. For example, let's see if we can predict whether specific M&M will get eaten. 
+ - one predictor - 'color': this split is choosen because it produces the largest difference in percent eatean b/w two groups. 
+ - add the second predictors - 'flavour': Only possible split is 'W_Peanuts' vs 'W/O_Peanuts'. 
+ - so which split would happen first? Since 'flavor' has a larger gap, it would cause the first split.
+ - Once the first split has happened, each split is treated separately. 
+ - Considering only the 'W_Peanuts' group for the second split and the 'W/O_Peanuts' group separately, how would the tree predict the actual result? What is the chance the 'blue M&M' is eaten? If we trace along the path for the 'blue', we can see that at the terminal node, there is 90% chance of being eaten. 
+<img src="https://user-images.githubusercontent.com/31917400/34521746-4fcf16fa-f087-11e7-89af-179764cffa14.jpg" /> 
+
 
 
  
  
 
 
+### Non-Binary-Classification
+__1. 
 
 
 
