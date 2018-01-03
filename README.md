@@ -205,7 +205,11 @@ __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary cl
 
  - Issue A. `Forest Model tool` 
 <img src="https://user-images.githubusercontent.com/31917400/34544525-ac949d72-f0de-11e7-95d5-11cad480983c.jpg" width="240" height="150" /> 
-
+   - reading the output report: 
+     - **Out of the Bag Error Rate:** Explains how well the model performed with the cross-validation set in the estimation data. This gives a good understanding of how solid the model performs with just the estimation data. You can think of it in the same terms as an R-squared.
+     - **Confusion Matrix:** Shows again how well the model performed on the original, estimation data. Compared to the "Out Of The Bag Error Rate", the confusion matrix does a better job at representing where errors occurred in classifying the data.
+     - **The Percentage Error for Different Number of Trees graph:** Helps us see what the correct number of trees is to use, so we can avoid over computing. What we are looking for is the number of trees it takes to minimize the error of each of the items, so basically, where does it flatline? After we determine the ideal number of trees, we can change subsequent Forest Models and run our data with the smaller number of Decision Trees.
+     - **Predictor Variables:** Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
 
 
 
