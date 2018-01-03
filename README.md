@@ -169,7 +169,7 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. T
    - reading the output Interactive:
      - we can see how the model is created and where it decides to split and how many records fall within each 'Yes/No' at each split.  
      - **confusion matrix:** A matrix (or table) that lists out all of the possible prediction results when we validate our model against our validation set. This confusion matrix is one of the best methods to review the accuracy and precision of your model as well as to understand any model bias in classifying your data points.
-<img src="https://user-images.githubusercontent.com/31917400/34523420-56e494d0-f08f-11e7-9b75-a8cd8dc8b7a9.jpg" width="600" height="400" />     
+<img src="https://user-images.githubusercontent.com/31917400/34523838-039c5f2c-f091-11e7-9ac3-cd88ea977acd.jpg" width="700" height="400" />     
  
 
  
