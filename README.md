@@ -221,10 +221,13 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
  - Makes a change to reduce it.
  - Does this over and over until it can’t make the tree any better and we have our finished Boosted Model.
  - Issue A. `Boosted model`
-   - 'validation step' required.
    - reading the output report:
      - **Predictor Variables importance:** Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
-     - **No.of Iteration assessment:** shows the amount of variance-'Deviance' that is captured with more iterations. This helps answer 'How many trees are needed to creat the optimal result?' 
+     - **No.of Iteration assessment:** shows the amount of variance-'Deviance'(distance between two probabilistic models) that is captured with more iterations. It shows how the deviance (loss) changes with the number of trees included in the model. The more trees added, the smarter the prediction became. The vertical blue dashed line indicates where the minimum deviance occurs using the specfied assessment criteria (cross validation, the use of a test sample, or out-of-bag prediction).This helps answer 'How many trees are needed to creat the optimal result?' The Estimation sample and In-Model sample estimate that are built into this model are very close, meaning this model performs well on an independent sample.
+<img src="https://user-images.githubusercontent.com/31917400/34563118-2cfca602-f149-11e7-8136-4e5083de0473.jpg" width="600" height="350" /> 
+
+ - 'validation step' required:
+   - 
 
 
 
