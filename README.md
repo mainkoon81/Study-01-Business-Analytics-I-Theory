@@ -210,8 +210,8 @@ __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary cl
    - **Out of the Bag Error Rate:** Explains how well the model performed with the cross-validation set in the estimation data. This gives a good understanding of how solid the model performs with just the estimation data. You can think of it in the same terms as an R-squared.
    - **Confusion Matrix:** Shows again how well the model performed on the original, estimation data. Compared to the "Out Of The Bag Error Rate", the confusion matrix does a better job at representing where errors occurred in classifying the data.
    - **The Percentage Error for Different Number of Trees graph:** Helps us see what the correct number of trees is to use, so we can avoid over computing. What we are looking for is the number of trees it takes to minimize the error of each of the items, so basically, where does it flatline? After we determine the ideal number of trees, we can change subsequent Forest Models and run our data with the smaller number of Decision Trees.
-   - **Predictor Variables:** Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
-
+   - **Predictor Variables importance:** Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
+<img src="https://user-images.githubusercontent.com/31917400/34545563-b66c6b0c-f0e5-11e7-8f52-7708c5eafc33.jpg" width="600" height="450" /> 
 
 
 
