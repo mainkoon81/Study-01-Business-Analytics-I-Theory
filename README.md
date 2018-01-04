@@ -233,18 +233,7 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
        - It has the highest overall accuracy
        - The averaged results from the forest model helps deal with the decision tree model's bias to overfit the data
 
-
-
-
-
-
-
-
-
-
-
-
-
+------------------------------------------------------------------------------------------------------------
 ## A/B testing 
  - When a company wants to test new versions of a webpage? 
  - A/B tests are used to test changes on a web page by running an experiment where a control group sees the old version, while the experiment group sees the new version. A **metric** is then chosen to measure the level of engagement from users in each group. These results are then used to judge whether one version is more effective than the other. A/B testing is very much like hypothesis testing.
@@ -254,6 +243,49 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
  - A/B testing also has its drawbacks: 
    - Type I. (Says False, but H0 actually True) Change Aversion or `false positives`: Existing users may give an unfair advantage to the old version, simply because they are unhappy with change, even if it’s ultimately for the better.
    - Type II. (Says True, but H0 actually False) Novelty Effect or `false negatives`: Existing users may give an unfair advantage to the new version, because they’re excited or drawn to the change, even if it isn’t any better in the long run.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -------------------------------------------------------------------------------------------
 ### Extra Tip: Statistical-knowledge
