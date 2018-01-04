@@ -213,6 +213,14 @@ __1. RandomForest Model:__ Of course we can use 'DecisionTree' for Non-binary cl
    - **Predictor Variables importance:** Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
 <img src="https://user-images.githubusercontent.com/31917400/34545792-21bfe4fa-f0e7-11e7-9a5a-7563e550916c.jpg" width="600" height="450" /> 
 
+__2. Gradient-tree boosted Model:__ Forest Models might give us a better estimate than decision trees, but they're computationally intensive. What we need is a model that can be both accurate AND fast. What we'll use to achieve this balance is known as the Boosted Model. How it works? 
+ - Instead of creating a bunch of random trees, the boosted model makes one tree.
+ - Algorithm performs an analysis on the errors of the tree to identify the biggest source of error.
+ - Changes the tree to reduce that error.
+ - Does the analysis again to find the next biggest error.
+ - Makes a change to reduce it.
+ - Does this over and over until it can’t make the tree any better and we have our finished Boosted Model.
+ - Issue A. ` `
 
 
 
