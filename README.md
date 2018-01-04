@@ -252,7 +252,7 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
    - A corporate recruiting company wants to determine if they let their employees work from home: Unit = An employee
    - A farmer wants to know if planting a seed deeper will slow down the growth of his crops?: Unit = A plant
  - Group: Treatment Grp / Control Grp 
- - Experimental variable: variable we can change to see how it affects the target variable.
+ - Treatment variable: variable we can change to see how it affects the target variable.
  - Control variable: predictors but has a purpose to create a 'baseline' to make the comparison as accurate as possible. 
  - Testing correlation to choose potential variables...make them comparable.  
  - Lurking(confounding) variable: when a variable is highly correlated with both target and another control predictors, this can cause to overweighted control variable. For example, Y=No.of death from drowning, X=icecream consumption, when they show a linear relationship, it's because of 'temperature' - Lurking variable. 
