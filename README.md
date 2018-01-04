@@ -267,7 +267,24 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
 In our experiment, a matched-Pair design would involve taking each treatment unit and finding one or more similar control units to match it to. Creating pairs. Analysis is done on a pair by pair basis, then aggregated to a single result. This unit by unit matching helps eliminate sources of bias, increase the confidence in results in spite of not enough obv size.   
 
 ### 1) Randomized Design
+**Units are assigned randomly to (control/treatment) Grp**
+> Scenario: the company's main goal is to drive more customers to download their app and register for their loyalty program. One way is via a link on the company website. Page viewing statistics show only 10% of people who visited the main page are clicking through to visit the page describing the app and the program. your Manager has asked you to set up an experiment to test whether changing the button of the page link (the modified page) would improve the click-through-rates. 
 
+ - Selecting variables
+   - Target variable: whether or not an individual clicked on the link(binary)
+   - Experiment: compare difference in the 'click-through-rate' for 'control Grp' / 'treatment Grp'
+   - control: the original main page
+   - control variables: 
+     - Type of people(socioeconomic standing, demographic profile, etc)
+     - people ID
+     - Membership
+   - treatment: the modified main page with the new botton design
+   
+ - Key factors to determine in setting the randomized experiment
+   - Unit of Diversion: How you will assign units to the control/treatment Grp
+   - Population: All visitors that don't have the app
+   - Duration: Does it represent true population?
+   - Size: Does it represent true population?
 
 
 
