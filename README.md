@@ -236,6 +236,7 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
 ------------------------------------------------------------------------------------------------------------
 ## A/B testing 
  - When a company wants to test new versions of a webpage? 
+ - A/B testing is crucial for businesses who want to test out scenarios where there is no good data to make predictions of these scenarios. The only way to find statistically significant results is to setup a test and compare the results against the control.
  - A/B tests are used to test changes on a web page by running an experiment where a control group sees the old version, while the experiment group sees the new version. A **metric** is then chosen to measure the level of engagement from users in each group. These results are then used to judge whether one version is more effective than the other. A/B testing is very much like hypothesis testing.
    - Null Hypothesis: The new version is no better, or even worse, than the old version (H0: 'new' =< 'old')
    - Alternative Hypothesis: The new version is better than the old version (H1: 'new' > 'old')
@@ -244,9 +245,28 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
    - Type I. (Says False, but H0 actually True) Change Aversion or `false positives`: Existing users may give an unfair advantage to the old version, simply because they are unhappy with change, even if it’s ultimately for the better.
    - Type II. (Says True, but H0 actually False) Novelty Effect or `false negatives`: Existing users may give an unfair advantage to the new version, because they’re excited or drawn to the change, even if it isn’t any better in the long run.
 
+> Scenario: You are a brand manager for a large candy manufacturer. The product development team has been hard at work coming up with a new line of products. As this is new, the company is unsure if it will be successful, you are being asked to predict the effect on sales if the new product is introduced so the management can determine if the product should go into full distribution ! We have no past information to help us build a model. so...SET UP AN EXPERIMENT !
 
+### You should define first...terminology
+ - Unit: 
+   - A corporate recruiting company wants to determine if they let their employees work from home: Unit = An employee
+   - A farmer wants to know if planting a seed deeper will slow down the growth of his crops?: Unit = A plant
+ - Group: Treatment Grp / Control Grp 
+ - Experimental variable: variable we can change to see how it affects the target variable.
+ - Control variable: predictors but has a purpose to create a 'baseline' to make the comparison as accurate as possible. 
+ - Testing correlation to choose potential variables...make them comparable.  
+ - Lurking(confounding) variable: when a variable is highly correlated with both target and another control predictors, this can cause to overweighted control variable. For example, Y=No.of death from drowning, X=icecream consumption, when they show a linear relationship, it's because of 'temperature' - Lurking variable. 
 
+### Experimental Design
+ - Randomized Design
+   - treatment and control units are selected randomly. For example: when there is a very little ability to control variables, and 'volumn and velocity' of data is high enough so we are not worried about bias, the cheap cost per obv - web_based experiment, phone_based experiment.
+ 
+ - Matched-Pair Design
+   - treatmenats are matched by controls on a unit to unit basis, using a weighting of the identified control variables. For example, when Volumn of obv is low, High concerns of bias, High cost per obv. 
 
+In our experiment, a matched-Pair design would involve taking each treatment unit and finding one or more similar control units to match it to. Creating pairs. Analysis is done on a pair by pair basis, then aggregated to a single result. This unit by unit matching helps eliminate sources of bias, increase the confidence in results in spite of not enough obv size.   
+
+### 1) Randomized Design
 
 
 
