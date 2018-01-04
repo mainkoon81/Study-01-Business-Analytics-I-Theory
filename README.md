@@ -220,14 +220,19 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
  - Does the analysis again to find the next biggest error.
  - Makes a change to reduce it.
  - Does this over and over until it can’t make the tree any better and we have our finished Boosted Model.
- - Issue A. `Boosted model`
+ - Issue A. `Boosted Model tool`
    - reading the output report:
      - **Predictor Variables importance:** Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
      - **No.of Iteration assessment:** shows the amount of variance-'Deviance'(distance between two probabilistic models) that is captured with more iterations. It shows how the deviance (loss) changes with the number of trees included in the model. The more trees added, the smarter the prediction became. The vertical blue dashed line indicates where the minimum deviance occurs using the specfied assessment criteria (cross validation, the use of a test sample, or out-of-bag prediction).This helps answer 'How many trees are needed to creat the optimal result?' The Estimation sample and In-Model sample estimate that are built into this model are very close, meaning this model performs well on an independent sample.
 <img src="https://user-images.githubusercontent.com/31917400/34563118-2cfca602-f149-11e7-8136-4e5083de0473.jpg" width="600" height="350" /> 
 
- - 'validation step' required:
-   - 
+ - 'validation step' required: `Model Comparison tool`
+   - applying the modelsss to the validation set and observing the accuracy
+   - Overall Accuracy of the Model, Overall Accuracy of different categories, Confusion Matrix
+     - If we look at the model accuracy we see that the Forest Model performed best, followed up by a very close second with the Decision Tree model. And coming in 3rd was the Boosted model. The Forest Model provides the highest accuracy, and there are now 2 reasons to pick the Forest Model:
+       - It has the highest overall accuracy
+       - The averaged results from the forest model helps deal with the decision tree model's bias to overfit the data
+
 
 
 
