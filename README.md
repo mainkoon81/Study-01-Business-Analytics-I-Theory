@@ -281,12 +281,14 @@ In our experiment, a matched-Pair design would involve taking each treatment uni
    - treatment: the modified main page with the new botton design
    
  - Key factors to determine in setting the randomized experiment
-   - Unit of Diversion: How you will assign units to the control/treatment Grp
-   - Population: All visitors that don't have the app
-   - Duration: Does it represent true population?
-   - Size: Does it represent true population?
+   - Unit of Diversion: How you will assign units to the control/treatment Grp (IP Address)
+   - Population: All visitors that don't have the app (visitors w/o account)
+   - Duration: Does it represent true population? (1 week)
+   - Size: Does it represent true population? (1/3 treatment, 2/3 control)
+>Then start collecting data !!!
 
-
+ - Data Preparation
+<img src="https://user-images.githubusercontent.com/31917400/34589783-83d05b52-f1aa-11e7-9980-03fcb9da04b6.jpg" width="600" height="320" />  
 
 
 
