@@ -262,9 +262,9 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
    - treatment and control units are selected randomly. For example: when there is a very little ability to control variables, and 'volumn and velocity' of data is high enough so we are not worried about bias, the cheap cost per obv - web_based experiment, phone_based experiment.
  
  - Matched-Pair Design
-   - treatmenats are matched by controls on a unit to unit basis, using a weighting of the identified control variables. For example, when Volumn of obv is low, High concerns of bias, High cost per obv. 
+   - When Volumn of obv is low, High concerns of bias, High cost per obv. Treatmenats are matched by controls on a unit to unit basis, using a weighting of the identified control variables. The goal is to create two grps of units that are as similar as possible to each other so that we can confidently say that any changes during the test are due to the introduction of the treatment variable. 
 
-In our experiment, a matched-Pair design would involve taking each treatment unit and finding one or more similar control units to match it to. Creating pairs. Analysis is done on a pair by pair basis, then aggregated to a single result. This unit by unit matching helps eliminate sources of bias, increase the confidence in results in spite of not enough obv size.   
+Many companies have a set of test(treatment) units they use over and over (Target mart, Houston?). In our experiment, a matched-Pair design would involve taking each treatment unit and finding one or more similar control units to match it to. Creating pairs. Analysis is done on a pair by pair basis, then aggregated to a single result. This unit by unit matching helps eliminate sources of bias, increase the confidence in results in spite of not enough obv size.   
 
 ### 1) Randomized Design
 **Units are assigned randomly to (control/treatment) Grp**
@@ -294,10 +294,13 @@ Q. How can we be sure the difference we see in the test actually exist in the en
 <img src="https://user-images.githubusercontent.com/31917400/34590905-986b2a5e-f1b1-11e7-9fb6-80cb2edb7515.jpg" width="600" height="150" />  
 <img src="https://user-images.githubusercontent.com/31917400/34591933-b84501a4-f1b8-11e7-8af6-757480b86474.jpg" /> 
 
+### 2) Matched-Pair Design
+**Taking each treatment unit and finding one or more similar control units to match it to.**
+ - Selecting Treatment Unit
+<img src="https://user-images.githubusercontent.com/31917400/34610163-c6623bf8-f217-11e7-8492-b7c71d2edacb.jpg" width="600" height="250" /> 
 
-
-
-
+ - Selecting Control Unit
+<img src="https://user-images.githubusercontent.com/31917400/34616859-618ec434-f231-11e7-9431-dee68a0eb769.jpg" width="600" height="180" /> 
 
 
 
