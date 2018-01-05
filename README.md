@@ -312,7 +312,9 @@ Many companies have a set of test(treatment) units they use over and over (Targe
    - Sould stop at point where the average distance increases significantly! Find the balance b/w more matches and average distance b/w matches. 
 <img src="https://user-images.githubusercontent.com/31917400/34621189-0fdc21cc-f240-11e7-96ec-978f2fa4b9ca.jpg" /> 
 
-*Q. The experiment has run for a month and now the results are in, it's time to dig into the result. We are comparing each treatment unit to one or more control units on a unit by unit basis. A Matched-Pair design experiment is analyzed using a `paired t-test` i.e, each data pt is a before-after pair. 
+*Q. The experiment has run for a month and now the results are in, it's time to dig into the result. We are comparing each treatment unit to one or more control units on a unit by unit basis. A Matched-Pair design experiment is analyzed using a `paired t-test` i.e, each data pt is a before-after pair.
+ - Issue B. `AB_Analysis tool`
+<img src="https://user-images.githubusercontent.com/31917400/34629701-0e77d4d6-f261-11e7-9e5c-2f53bbcd3e8e.jpg" /> 
 
 
 
