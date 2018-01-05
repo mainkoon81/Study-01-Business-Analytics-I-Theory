@@ -290,16 +290,16 @@ Many companies have a set of test(treatment) units they use over and over (Targe
  - Data Preparation
 <img src="https://user-images.githubusercontent.com/31917400/34589783-83d05b52-f1aa-11e7-9980-03fcb9da04b6.jpg" width="600" height="320" />  
 
-Q. How can we be sure the difference we see in the test actually exist in the entire population? A Randomized design experiment is analyzed using a **'test of means analysis'**(statistical calculation of whether the mean values of the treatment and control Grp are the same or different).  
+Q. How can we be sure the difference we see in the test actually exist in the entire population? A Randomized design experiment is analyzed using a **'test of means analysis'**(statistical calculation(t-test) of whether the mean values of the treatment and control Grp are the same or different).  
 <img src="https://user-images.githubusercontent.com/31917400/34590905-986b2a5e-f1b1-11e7-9fb6-80cb2edb7515.jpg" width="600" height="150" />  
 <img src="https://user-images.githubusercontent.com/31917400/34591933-b84501a4-f1b8-11e7-8af6-757480b86474.jpg" /> 
 
 ### 2) Matched-Pair Design
 **Taking each treatment unit and finding one or more similar control units to match it to.**
- - Selecting Treatment Unit
+ - First, Selecting Treatment Unit
 <img src="https://user-images.githubusercontent.com/31917400/34610163-c6623bf8-f217-11e7-8492-b7c71d2edacb.jpg" width="600" height="250" /> 
 
- - Selecting Control Unit
+ - Next, Selecting Control Unit
 <img src="https://user-images.githubusercontent.com/31917400/34616859-618ec434-f231-11e7-9431-dee68a0eb769.jpg" width="600" height="180" /> 
 
  - So we need a method to find the best control unit to match to the selected treatment unit.
