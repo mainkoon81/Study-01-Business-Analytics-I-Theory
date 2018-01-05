@@ -292,7 +292,7 @@ In our experiment, a matched-Pair design would involve taking each treatment uni
 
 Q. How can we be sure the difference we see in the test actually exist in the entire population? A Randomized design experiment is analyzed using a **'test of means analysis'**(statistical calculation of whether the mean values of the treatment and control Grp are the same or different).  
 <img src="https://user-images.githubusercontent.com/31917400/34590905-986b2a5e-f1b1-11e7-9fb6-80cb2edb7515.jpg" width="600" height="150" />  
-
+<img src="https://user-images.githubusercontent.com/31917400/34591933-b84501a4-f1b8-11e7-8af6-757480b86474.jpg" /> 
 
 
 
