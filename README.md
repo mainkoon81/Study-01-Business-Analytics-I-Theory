@@ -302,8 +302,12 @@ Q. How can we be sure the difference we see in the test actually exist in the en
  - Selecting Control Unit
 <img src="https://user-images.githubusercontent.com/31917400/34616859-618ec434-f231-11e7-9431-dee68a0eb769.jpg" width="600" height="180" /> 
 
-
-
+ - So we need a method to find the best control unit to match to the selected treatment unit.
+ - Issue A. `AB_Control tool`
+   - It takes all of numeric variable and calculates a single value that determines how far the treatment unit is from each control unit (Distance Score). 
+ - Selecting Multiple Control Units
+   - This increases the confidence in the baseline and makes for a better comparison, but how many to choose?
+   - Sould stop at point where the average distance increases significantly! Find the balance b/w more matches and average distance b/w matches. 
 
 
 
