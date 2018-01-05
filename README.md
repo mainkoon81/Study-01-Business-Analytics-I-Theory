@@ -319,8 +319,9 @@ Many companies have a set of test(treatment) units they use over and over (Targe
 *Q. Using data from 2010, including the week ending on 2011-1-1, what is the **incremental impact to sales** using a 6.4% lift per week per customer per store?
 <img src="https://user-images.githubusercontent.com/31917400/34631846-4968b14c-f26a-11e7-8bae-73e6f646a2f7.jpg" /> 
 
-
-
+------------------------------------------------------------------------------------------------------------
+## Time-Series forecasting 
+ - 
 
 
 
