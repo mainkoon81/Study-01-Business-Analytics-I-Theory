@@ -308,7 +308,7 @@ Q. How can we be sure the difference we see in the test actually exist in the en
  - Selecting Multiple Control Units
    - This increases the confidence in the baseline and makes for a better comparison, but how many to choose?
    - Sould stop at point where the average distance increases significantly! Find the balance b/w more matches and average distance b/w matches. 
-
+<img src="https://user-images.githubusercontent.com/31917400/34621189-0fdc21cc-f240-11e7-96ec-978f2fa4b9ca.jpg" /> 
 
 
 
