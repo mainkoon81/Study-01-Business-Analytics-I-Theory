@@ -321,7 +321,10 @@ Many companies have a set of test(treatment) units they use over and over (Targe
 
 ------------------------------------------------------------------------------------------------------------
 ## Time-Series forecasting 
- - 
+ - It is the use of a statistical model to predict future values based on past results. 
+ - Using any variables that can be tracked and collected over time (annual population, daily stock price, quarterly sales)
+ - How do I define time? What are trends? What are seasonal patterns? 
+ - Forecasting Model - Exponential Smoothing(ETS), AutoRegressive Integrated Moving Average(ARIMA)
 
 
 
