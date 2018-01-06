@@ -327,12 +327,18 @@ Many companies have a set of test(treatment) units they use over and over (Targe
  - Forecasting Model - Exponential Smoothing(ETS), AutoRegressive Integrated Moving Average(ARIMA)
 
 ### Attributes of a Time Series
- - It's over a continuous time interval
- - There are sequential measurements across that interval
- - There is equal spacing between every two consecutive measurements
- - Each time unit within the time interval has at most one data point
+ - It's over a **continuous** time interval
+ - There are **sequential** measurements across that interval
+ - There is **equal spacing** between every two consecutive measurements
+ - Each time unit within the time interval has at most one **data point**
 
+>Scenario: We have historical booking data containing monthly data from the past 10 years. We want to forecast monthly bookings for next 6 months. 1) Investigate the data, 2) Determine trend and seasonal components, 3) Apply findings to an ARIMA and ETS
 
+ - Trend Component: 
+<img src="https://user-images.githubusercontent.com/31917400/34643966-916b27ca-f325-11e7-9e2c-9c3e6b878f9e.jpg" width="500" height="200" />    
+
+ - Seasonal Component
+ 
 
 
 
