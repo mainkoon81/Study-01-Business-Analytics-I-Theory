@@ -326,7 +326,11 @@ Many companies have a set of test(treatment) units they use over and over (Targe
  - How do I define time? What are trends? What are seasonal patterns? 
  - Forecasting Model - Exponential Smoothing(ETS), AutoRegressive Integrated Moving Average(ARIMA)
 
-
+### Attributes of a Time Series
+ - It's over a continuous time interval
+ - There are sequential measurements across that interval
+ - There is equal spacing between every two consecutive measurements
+ - Each time unit within the time interval has at most one data point
 
 
 
