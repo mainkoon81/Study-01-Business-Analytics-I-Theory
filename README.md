@@ -341,6 +341,8 @@ Many companies have a set of test(treatment) units they use over and over (Targe
    - In general, the avg length of cycles is longer than that of the seasonal pattern.
    - In general, the magnitude of cycles change more than that of the seasonal pattern.
  - Seasonal pattern: when the period is fixed, and associated with some aspect of the calender    
+ - ETS model
+ 
 
 
 
