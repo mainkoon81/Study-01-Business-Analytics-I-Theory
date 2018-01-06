@@ -341,8 +341,14 @@ Many companies have a set of test(treatment) units they use over and over (Targe
    - In general, the avg length of cycles is longer than that of the seasonal pattern.
    - In general, the magnitude of cycles change more than that of the seasonal pattern.
  - Seasonal pattern: when the period is fixed, and associated with some aspect of the calender    
- - ETS model
- 
+### ETS model - Error,Trend,Seasonality - Exponential Smoothing calculation
+ - It uses weighed avg of past obv: giving more weight to the most recent obv with weights gradually getting smaller as the obv gets older.
+ - Decomposition(How to determine how to apply Error, Trend, Seasonality?)
+   - First, visualize the data by using a'time_series_decomposition' plot that separates time series into its error, trend, seasonal components.   
+ - Each term (E/T/S) is applied either additively(+), multiplicatively(x), being left out of the model all together.
+   - It relies on our ability to see E,T,S patterns.
+<img src="https://user-images.githubusercontent.com/31917400/34645134-460a3664-f33d-11e7-86ec-1aa968b6a6bb.jpg" /> 
+
 
 
 
