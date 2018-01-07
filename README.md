@@ -350,12 +350,14 @@ Many companies have a set of test(treatment) units they use over and over (Targe
 <img src="https://user-images.githubusercontent.com/31917400/34645134-460a3664-f33d-11e7-86ec-1aa968b6a6bb.jpg" /> 
 
  - 4 Models
-   - 1> Simple Exponential Smoothing Method
-   - 2> Holt's Linear Trend Method
-   - 3> Exponential Trend Method
-   - 4> Holt-Winters Seasonal Method
+   - 1. Simple Exponential Smoothing Method
+   - 2. Holt's Linear **Trend** Method
+   - 3. Exponential **Trend** Method
+   - 3_1. Damped **Trend** Method
+   - 4. Holt-Winters **Seasonal** Method
 #### 1> Simple Exponential Smoothing
-
+When Time series does not have a trend line and does not have seasonality component !
+ - 
 
 
 
