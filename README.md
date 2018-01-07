@@ -349,8 +349,12 @@ Many companies have a set of test(treatment) units they use over and over (Targe
    - It relies on our ability to see E,T,S patterns.
 <img src="https://user-images.githubusercontent.com/31917400/34645134-460a3664-f33d-11e7-86ec-1aa968b6a6bb.jpg" /> 
 
-
-
+ - 4 Models
+   - 1> Simple Exponential Smoothing Method
+   - 2> Holt's Linear Trend Method
+   - 3> Exponential Trend Method
+   - 4> Holt-Winters Seasonal Method
+#### 1> Simple Exponential Smoothing
 
 
 
