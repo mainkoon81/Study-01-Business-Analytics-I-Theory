@@ -425,7 +425,7 @@ p.d.q values represent the amount of periods to lag for in the calculation.
 ### Variable Reduction
  - PCA analyses all of the variance within all of the variables selected. It focuses on accounting for the total variation. It tries to answer how it can summarise the variables. 
  - FA analyses variance that are shared or common within the variables. It focuses on accounting for just the correlations b/w variables. It tries to answer what fundamentally might be causing the responses.  
-<img src="https://user-images.githubusercontent.com/31917400/34652092-8d0d02f0-f3d1-11e7-9aff-df0fd1c95799.jpg" width="400" height="200" /> 
+<img src="https://user-images.githubusercontent.com/31917400/34652092-8d0d02f0-f3d1-11e7-9aff-df0fd1c95799.jpg" width="400" height="100" /> 
 
 
 
