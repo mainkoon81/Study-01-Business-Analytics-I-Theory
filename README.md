@@ -415,9 +415,21 @@ p.d.q values represent the amount of periods to lag for in the calculation.
 
 ### Data Preparation for clustering
  - Objectives behind creating segments determine the data or variables to use for our model. 
-<img src="https://user-images.githubusercontent.com/31917400/34651493-c898f26a-f3c8-11e7-916f-232298baa5d0.jpg" />    
+<img src="https://user-images.githubusercontent.com/31917400/34651586-041e8a92-f3ca-11e7-9d6b-3e8ac5a333ad.jpg" />    
 
- - 
+ - Predetermined bias: Consider how the business was run over the time our data was collected. Sth abnormal happened? 
+ - Datatype: 
+ - Data Quality: outliers, missing, How far out the outliers are? can have an hugh impact on the clustering processs.
+ - Scaling(standardizing): A 'z-score' (aka, a standard score) indicates how many standard deviations an element is from the mean. 
+
+### Variable Reduction
+ - PCA analyses all of the variance within all of the variables selected. It focuses on accounting for the total variation. It tries to answer how it can summarise the variables. 
+ - FA analyses variance that are shared or common within the variables. It focuses on accounting for just the correlations b/w variables. It tries to answer what fundamentally might be causing the responses.  
+<img src="https://user-images.githubusercontent.com/31917400/34652092-8d0d02f0-f3d1-11e7-9aff-df0fd1c95799.jpg" width="400" height="200" /> 
+
+
+
+
 
 
 
