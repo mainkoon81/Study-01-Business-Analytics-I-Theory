@@ -373,9 +373,10 @@ Choosing the Smoothing Parameter α
  - The advantage of exponential smoothing methods over simple moving averages is that new data is depreciated at a constant rate, gradually declining in its impact, whereas the impact of a large or small value in a moving average, will have a constant impact. However, this also means that exponential smoothing methods are more sensitive to sudden large or small values.
  - The simple exponential smoothing method does not account for any trend or seasonal components, rather, it only uses the decreasing weights to forecast future results. This makes the method suitable only for time series without trend and seasonality.
 
-#### 2> Holt's Linear Trend Method
-
-
+#### 2> Holt's Linear Trend Method(Double Exponential Smoothing)
+#### 3> Exponential Trend Method
+#### 4> Damped **Trend** Method
+#### 5> Holt-Winters **Seasonal** Method
 
 
 
@@ -388,13 +389,18 @@ Choosing the Smoothing Parameter α
  - (Non_Seasonal Model (p.d.q) / Seasonal_Model)
 
 1> __Non_Seasonal Model:__ It forecasts the future point based on the construction of 3 components.
-   - AR: Autoregressive (p)-previous..in an autoregressive portion 
-   - I: Differencing (d)
-   - MA: Moving Average (q)
+ - AR: Autoregressive (p)-previous..in an autoregressive portion 
+ - I: Differencing (d)
+ - MA: Moving Average (q)
+>p.d.q values represent the amount of periods to lag for in the calculation. 
 
-p.d.q values represent the amount of periods to lag for in the calculation.  
+ - AR: If p=2, we'll be using 2 previous periods. It helps adjust the line fitted to forecast the series. 
+ - I: d refers to the number of transformations(a time series into a stationary one) used in the process. That is a series w/o trend, seasonality.
+ - MA: q refers to the lag of the error components(which refers to the part of the time series not explained by trend, seasonality)
+<img src="https://user-images.githubusercontent.com/31917400/34655486-95916e94-f402-11e7-92de-288eefc15e4e.jpg" /> 
 
-
+__Stationarity__
+ - A time series may need to be transformed by differencing to be made stationary.  
 
 
 
