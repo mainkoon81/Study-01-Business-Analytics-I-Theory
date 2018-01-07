@@ -361,7 +361,7 @@ When Time series does not have a **trend** line and does not have **seasonality*
 <img src="https://user-images.githubusercontent.com/31917400/34645197-e05640c2-f33e-11e7-89ac-05ba50e8634a.png" width="400" height="200" />   
 
 The forecast is calculated by multiplying past values by relative weights, which are calculated based upon what is termed a **smoothing parameter** called the alpha or α. This is the magnitude of the weight applied to the previous values, with the weights decreasing exponentially as the observations get older.
-<img src="https://user-images.githubusercontent.com/31917400/34645220-746b5a9a-f33f-11e7-95f5-104f6897eda7.jpg" /> 
+<img src="https://user-images.githubusercontent.com/31917400/34645260-8e625236-f340-11e7-8a8f-48d99492fb4a.jpg" /> 
 
 
 
