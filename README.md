@@ -324,7 +324,7 @@ Many companies have a set of test(treatment) units they use over and over (Targe
  - It is the use of a statistical model to predict future values based on past results. 
  - Using any variables that can be tracked and collected over time (annual population, daily stock price, quarterly sales)
  - How do I define time? What are trends? What are seasonal patterns? 
- - Forecasting Model - Exponential Smoothing(ETS), AutoRegressive Integrated Moving Average(ARIMA)
+ - Forecasting Model - Exponential Smoothing(ETS), Auto Regressive Integrated Moving Average(ARIMA)
 
 ### Attributes of a Time Series
  - It's over a **continuous** time interval
@@ -349,12 +349,12 @@ Many companies have a set of test(treatment) units they use over and over (Targe
    - It relies on our ability to see E,T,S patterns.
 <img src="https://user-images.githubusercontent.com/31917400/34645134-460a3664-f33d-11e7-86ec-1aa968b6a6bb.jpg" /> 
 
- - 4 Models
+ - 5 Models
    - 1. Simple Exponential Smoothing Method
-   - 2. Holt's Linear **Trend** Method
+   - 2. Linear **Trend** Method
    - 3. Exponential **Trend** Method
-   - 3_1. Damped **Trend** Method
-   - 4. Holt-Winters **Seasonal** Method
+   - 4. Damped **Trend** Method
+   - 5. Holt-Winters **Seasonal** Method
 
 #### 1> Simple Exponential Smoothing
 When Time series does not have a **trend** line and does not have **seasonality** component !
@@ -384,7 +384,28 @@ Choosing the Smoothing Parameter α
 
 
 
+### ARIMA Model
+ - (Non_Seasonal Model (p.d.q) / Seasonal_Model)
 
+1> __Non_Seasonal Model:__ It forecasts the future point based on the construction of 3 components.
+   - AR: Autoregressive (p)-previous..in an autoregressive portion 
+   - I: Differencing (d)
+   - MA: Moving Average (q)
+
+p.d.q values represent the amount of periods to lag for in the calculation.  
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+## Segmentation & Clustering
+ - Difference b/w Clustering and Grouping
+ 
 
 
 
