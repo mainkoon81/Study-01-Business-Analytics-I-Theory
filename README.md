@@ -414,9 +414,10 @@ p.d.q values represent the amount of periods to lag for in the calculation.
 <img src="https://user-images.githubusercontent.com/31917400/34650461-a3dcf642-f3b9-11e7-9851-3504820ac403.jpg" />    
 
 ### Data Preparation for clustering
+ - Objectives behind creating segments determine the data or variables to use for our model. 
+<img src="https://user-images.githubusercontent.com/31917400/34651493-c898f26a-f3c8-11e7-916f-232298baa5d0.jpg" />    
 
-
-
+ - 
 
 
 
