@@ -411,6 +411,8 @@ p.d.q values represent the amount of periods to lag for in the calculation.
  - How to balance b/w Standardization / Localization? Clustering is a statistical methodology that groups similar objects into clusters(segments) in a multi-dimension, Using 'Distance'- measuring similarity.
  - This algorithm creates segments and make their objects in each segment as similar as possible, but make each segment as far away from each other as possible. 
 <img src="https://user-images.githubusercontent.com/31917400/34650267-efeb943e-f3b5-11e7-9a48-af9d06e8fb63.jpg" width="400" height="200" /> 
+<img src="https://user-images.githubusercontent.com/31917400/34650461-a3dcf642-f3b9-11e7-9851-3504820ac403.jpg" />    
+
 
 
 
