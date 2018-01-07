@@ -360,7 +360,7 @@ Many companies have a set of test(treatment) units they use over and over (Targe
 When Time series does not have a **trend** line and does not have **seasonality** component !
 <img src="https://user-images.githubusercontent.com/31917400/34645197-e05640c2-f33e-11e7-89ac-05ba50e8634a.png" width="400" height="200" />   
 
-This model basically gives us a **smooth line or LEVEL** in our forecast that we can use to forecast the next period. The forecast is calculated by multiplying past values by relative weights, which are calculated based upon what is termed a **smoothing parameter** called the alpha or α. This is the magnitude of the weight applied to the previous values, with the weights decreasing exponentially as the observations get older.
+This model basically gives us a **smooth line or LEVEL** in our forecast that we can use to forecast the next period. The predicted next value is calculated by multiplying past values by relative weights, which are calculated based upon what is termed a **smoothing parameter** called the alpha or α. This is the magnitude of the weight applied to the previous values, with the weights decreasing exponentially as the observations get older.
 <img src="https://user-images.githubusercontent.com/31917400/34645260-8e625236-f340-11e7-8a8f-48d99492fb4a.jpg" /> 
 
 The Smoothing Parameter α
@@ -374,6 +374,20 @@ Choosing the Smoothing Parameter α
  - The simple exponential smoothing method does not account for any trend or seasonal components, rather, it only uses the decreasing weights to forecast future results. This makes the method suitable only for time series without trend and seasonality.
 
 #### 2> Holt's Linear Trend Method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
