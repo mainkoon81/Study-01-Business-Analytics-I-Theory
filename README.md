@@ -404,8 +404,10 @@ p.d.q values represent the amount of periods to lag for in the calculation.
 
 ------------------------------------------------------------------------------------------------------------
 ## Segmentation & Clustering
- - Difference b/w Clustering and Grouping
- 
+> Let's say a retail business has thousands stores. We want to create models to determine what is the best product mix (heater ? or AC ?) in each of these? It would be great if we could email individually to each of our customers that is customized considering each customer's needs or interests. How to do this? Dividing the entities into smaller set of objects called 'segments'. 
+ - want to deal with the group as a whole? Use 'Standardization' (simplifying logistics)
+ - want to deal with each entity individually, differently? Use 'Localization' with their own product mix that works for the specific stores(custumizable based on specifics)
+<img src="https://user-images.githubusercontent.com/31917400/34650107-22dd6c58-f3b3-11e7-8cce-1705e0a20378.jpg" />    
 
 
 
