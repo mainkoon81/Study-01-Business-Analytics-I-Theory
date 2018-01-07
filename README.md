@@ -408,7 +408,9 @@ p.d.q values represent the amount of periods to lag for in the calculation.
  - want to deal with the group as a whole? Use 'Standardization' (simplifying logistics)
  - want to deal with each entity individually, differently? Use 'Localization' with their own product mix that works for the specific stores(custumizable based on specifics)
 <img src="https://user-images.githubusercontent.com/31917400/34650107-22dd6c58-f3b3-11e7-8cce-1705e0a20378.jpg" />    
-
+ - How to balance b/w Standardization / Localization? Clustering is a statistical methodology that groups similar objects into clusters(segments) in a multi-dimension, Using 'Distance'- measuring similarity.
+ - This algorithm creates segments and make their objects in each segment as similar as possible, but make each segment as far away from each other as possible. 
+<img src="https://user-images.githubusercontent.com/31917400/34650267-efeb943e-f3b5-11e7-9a48-af9d06e8fb63.jpg" width="400" height="200" /> 
 
 
 
