@@ -400,7 +400,7 @@ Choosing the Smoothing Parameter α
 <img src="https://user-images.githubusercontent.com/31917400/34655486-95916e94-f402-11e7-92de-288eefc15e4e.jpg" /> 
 
 __Stationarity__
- - A time series may need to be transformed by differencing to be made stationary.  
+ - A time series may need to be transformed by differencing to be made stationary. This means one where the mean, variance are constant over time. A stationarized series is easy to predict for our model.   
 
 
 
