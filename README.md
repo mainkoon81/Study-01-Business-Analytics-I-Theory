@@ -549,31 +549,37 @@ if __name__ == '__main__':
 ## Q2.
 Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
 
->practice 01. 
-Converting 'Date or str' into 'datetime' object.
- - using `datetime.datetime(year, month, day, hour, minute, second).strptime(str, format)`: str, format -> new datetime parsed from a str. 
- - What if using `datetime.date(year, month, day).strftime(format)`: format -> strftime() style str and its format is, for example,  (%A,%a):Monday, (%d):Day of the month 30, (%B,%b):May, (%Y,%y): Year with/without century 2013, (%H:%M:%S): Hour Minute Second, (%X,%x):time 07:06:05 date 09/30/13, (%c):date+time Mon Sep 30 07:06:05 2013
-```
-from datetime import datetime
-date1 = "2016-07-17 12:23:45"
-date2 = "Sun, 17 Jul 2016 12:34:56 GMT"
-```
-```
-d1 = datetime.strptime(date1, "%Y-%m-%d %H:%M:%S"); d1
-```
-/// datetime.datetime(2016, 7, 17, 12, 23, 45)
-```
-d2 = datetime.strptime(date2, "%a, %d %b %Y %H:%M:%S GMT"); d2
-```
-/// datetime.datetime(2016, 7, 17, 12, 34, 56)
-```
-d2.timestamp()
-```
-/// 1468726496.0
+>practice 01. datetime module
 
+1. `datetime.datetime` is the combination of 'date'class and 'time'class.
+```
+import datetime
 
+today = datetime.datetime.today() # or datetime.datetime.now()
+print(today)
+```
+/// 2018-01-23 22:50:03.543023
 
+2. define date and time elements
+```
+year = datetime.datetime.today().year
+month = datetime.datetime.today().month
+day = datetime.datetime.today().day
+hour = datetime.datetime.today().hour
+minute = datetime.datetime.today().minute
+second = datetime.datetime.today().second
+```
+3. datetime.date() process Year, Month, Day. First, we need to come up and offer... year, month, day then 'date()' processes them.
+```
+date_c = datetime.date(2016, 12, 24)   # introducing certain day #
+date_d = datetime.date(year, month, day)   # today's date #
+date_e = date_d - date_c   ### calculating days passed. ### 
 
+print('First meetup : {}'.format(date_c))
+print('Today is  : {}'.format(date_d))
+print("It's been {}days".format(date_e.days))
+```
+<img src="https://user-images.githubusercontent.com/31917400/35305561-9d98e112-0091-11e8-871a-971a7e7866c2.jpg" />    
 
 
 
