@@ -623,6 +623,7 @@ print(d4)
 d4.timestamp()
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35305927-43de08ee-0093-11e8-9c67-7ac8905a747b.jpg" />    
+<img src="https://user-images.githubusercontent.com/31917400/35306223-86de549a-0094-11e8-8974-4e545792302a.jpg" />    
 
 
 
