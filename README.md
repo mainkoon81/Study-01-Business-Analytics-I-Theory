@@ -625,7 +625,33 @@ d4.timestamp()
 <img src="https://user-images.githubusercontent.com/31917400/35305927-43de08ee-0093-11e8-9c67-7ac8905a747b.jpg" />    
 <img src="https://user-images.githubusercontent.com/31917400/35306223-86de549a-0094-11e8-8974-4e545792302a.jpg" />    
 
+>Practice 2. time module
 
+1. it gives each individual element ?
+ - `gmtime()` gives tm_year, tm_mon, tm_mday, tm_hour, tm_min, tm_sec. 
+ - Plus, 
+   - **tm_wday:** 0 (Mon), 1 (Tue), ....
+   - **tm_yday:** counting days from the begining of the year
+   - **tm_isdst:**
+```
+import time
+tt = time.gmtime()
+
+print(t2.tm_year)
+print(t2.tm_mon)
+print(t2.tm_mday) ##
+print(t2.tm_hour)
+print(t2.tm_min)
+print(t2.tm_sec)
+print(t2.tm_wday) ##
+print(t2.tm_yday) ##
+print(t2.tm_isdst) ##?????
+```
+<img src="https://user-images.githubusercontent.com/31917400/35306605-83c2f692-0096-11e8-993f-1fe3bdce953f.jpg" />    
+
+```
+365 - tt.tm_yday
+```
 
 
 
