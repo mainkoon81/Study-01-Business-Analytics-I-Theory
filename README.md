@@ -598,7 +598,7 @@ type(today_2)
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35305755-80a0e2a2-0092-11e8-99f4-3dc73e6dd916.jpg" />    
 
- - `strptime` is the way we teach python date&time. Need to introduce certain 'time str' and articulating the format one by one so that python understands. 
+ - `strptime()` is the way we teach python date&time. Need to introduce certain 'time str' and articulating the format one by one so that python understands. 
 ```
 d1 = datetime.datetime.strptime('2017/12/21 14|00|38', '%Y/%m/%d %H|%M|%S')
 
