@@ -569,7 +569,7 @@ hour = datetime.datetime.today().hour
 minute = datetime.datetime.today().minute
 second = datetime.datetime.today().second
 ```
-3. datetime.date() process Year, Month, Day. First, we need to come up and offer... year, month, day then 'date()' processes them.
+3. `datetime.date()` process Year, Month, Day. First, we need to come up and offer... year, month, day then 'date()' processes them.
 ```
 date_c = datetime.date(2016, 12, 24)   # introducing certain day #
 date_d = datetime.date(year, month, day)   # today's date #
@@ -581,15 +581,48 @@ print("It's been {}days".format(date_e.days))
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35305561-9d98e112-0091-11e8-871a-971a7e7866c2.jpg" />    
 
+4. `datetime.time()` process Hour, Minute, Second with (Time zone)
+```
+time_a = datetime.time(21, 30, 24)
+print('we meet at: {}'.format(time_a))
+```
+<img src="https://user-images.githubusercontent.com/31917400/35305674-1aec45be-0092-11e8-9101-c97ef07f989b.jpg" />    
 
+5. manipulation
+ - `strftime()` is the way to ask python about the string format we want.
+```
+today_2 = datetime.datetime.today().strftime('%Y + %m + %d %H peekaboo %M:%S')
 
+print(today_2)
+type(today_2)
+```
+<img src="https://user-images.githubusercontent.com/31917400/35305755-80a0e2a2-0092-11e8-99f4-3dc73e6dd916.jpg" />    
 
+ - `strptime` is the way we teach python date&time. Need to introduce certain 'time str' and articulating the format one by one so that python understands. 
+```
+d1 = datetime.datetime.strptime('2017/12/21 14|00|38', '%Y/%m/%d %H|%M|%S')
 
+d2 = d1.replace(year=9999, month=9, day=29, hour=11, minute=59, second=49)
 
+print('Check-in :', end=' ')
+print(d1)
 
+print('New Ckeck-in :', end=' ')
+print(d2)
+```
+<img src="https://user-images.githubusercontent.com/31917400/35305877-118971a8-0093-11e8-81a8-7234b401ae38.jpg" />    
 
+```
+date_a = "2016-07-17 12:23:45"
+date_b = "Sun, 17 Jul 2016 12:34:56 GMT"
 
+d3 = datetime.datetime.strptime(date_a, "%Y-%m-%d %H:%M:%S")
+d4 = datetime.datetime.strptime(date_b, "%a, %d %b %Y %H:%M:%S GMT")
 
+print(d4)
+d4.timestamp()
+```
+<img src="https://user-images.githubusercontent.com/31917400/35305927-43de08ee-0093-11e8-9c67-7ac8905a747b.jpg" />    
 
 
 
