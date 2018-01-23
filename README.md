@@ -534,7 +534,7 @@ def most_frequent(s):
         cc = ar.count(ar[i])
         pool.append(cc)
     mx = max(pool)     ## it shows the biggest element. ##
-    ind_loc = pool.index(mx)
+    ind_loc = pool.index(mx)     ## it gives the location of the element. ##
     result = ar[ind_loc]
     return result
 
