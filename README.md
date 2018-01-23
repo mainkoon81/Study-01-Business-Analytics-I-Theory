@@ -518,9 +518,33 @@ The way we perform inferential statistics is changing as technology evolves. Man
 -------------------------------------------------------------------------------------------
 ### Extra Tip_2: Trial & Error project collections
 ## Q1.
-Write a function that returns the most frequently occurring word in a given string. For example, if the input s is `s = 'I scream you scream we all scream for ice cream'`, the result should be scream as it is the most frequent word in this sentence. If there is a tie for the most common word, return only one result, the first (tied) word in alphabetical order.
-```
+Write a function that returns the most frequently occurring word in a given string. For example, if the input s is `s = 'I scream you scream we all scream for ice cream'`, the result should be `scream` as it is the most frequent word in this sentence. If there is a tie for the most common word, return only one result, the first (tied) word in alphabetical order. 
+    # HINT: Use the built-in split() function to transform the string s into an array
+    # HINT: Iterate through the array and count each occurance of every word using the .count() list method
+    # HINT: Find the number of times the most common word appears using max()
+    # HINT: Locate the index of the most frequently seen word
+    # HINT: Return the most frequent word. Remember that if there is a tie, return the first (tied) word in alphabetical order.
 
+
+```
+def most_frequent(s):
+    ar = s.split()
+    pool = []
+    for i in range(0,len(ar),1):
+        cc = ar.count(ar[i])
+        pool.append(cc)
+    mx = max(pool)     ## it shows the biggest element. ##
+    ind_loc = pool.index(mx)
+    result = ar[ind_loc]
+    return result
+
+def test_run():
+    print most_frequent("cat bat mat cat bat cat")     ## output: 'cat' ##
+    print most_frequent("betty bought a bit of butter but the butter was bitter")      ## output: 'butter' ##
+    print most_frequent("london bridge is falling down falling down falling down london bridge is falling down my fair lady")
+
+if __name__ == '__main__':
+    test_run()
 ```
 
 
