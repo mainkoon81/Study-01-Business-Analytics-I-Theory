@@ -525,13 +525,12 @@ Write a function that returns the most frequently occurring word in a given stri
     # HINT: Locate the index of the most frequently seen word
     # HINT: Return the most frequent word. Remember that if there is a tie, return the first (tied) word in alphabetical order.
 
-
 ```
 def most_frequent(s):
     ar = s.split()
     pool = []
     for i in range(0,len(ar),1):
-        cc = ar.count(ar[i])
+        cc = ar.count(ar[i])     ## it shows how many times the element appears in the str ##
         pool.append(cc)
     mx = max(pool)     ## it shows the biggest element. ##
     ind_loc = pool.index(mx)     ## it gives the location of the element. ##
@@ -546,6 +545,32 @@ def test_run():
 if __name__ == '__main__':
     test_run()
 ```
+
+## Q2.
+Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
+
+>practice 01. 
+Converting 'Date or str' into 'datetime' object.
+ - using `datetime.datetime(year, month, day, hour, minute, second).strptime(str, format)`: str, format -> new datetime parsed from a str. 
+ - What if using `datetime.date(year, month, day).strftime(format)`: format -> strftime() style str and its format is, for example,  (%A,%a):Monday, (%d):Day of the month 30, (%B,%b):May, (%Y,%y): Year with/without century 2013, (%H:%M:%S): Hour Minute Second, (%X,%x):time 07:06:05 date 09/30/13, (%c):date+time Mon Sep 30 07:06:05 2013
+```
+from datetime import datetime
+date1 = "2016-07-17 12:23:45"
+date2 = "Sun, 17 Jul 2016 12:34:56 GMT"
+```
+```
+d1 = datetime.strptime(date1, "%Y-%m-%d %H:%M:%S"); d1
+```
+/// datetime.datetime(2016, 7, 17, 12, 23, 45)
+```
+d2 = datetime.strptime(date2, "%a, %d %b %Y %H:%M:%S GMT"); d2
+```
+/// datetime.datetime(2016, 7, 17, 12, 34, 56)
+```
+d2.timestamp()
+```
+/// 1468726496.0
+
 
 
 
