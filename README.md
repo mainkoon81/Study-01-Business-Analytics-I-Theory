@@ -440,7 +440,7 @@ __Stationarity__
 
 
 -------------------------------------------------------------------------------------------
-### Extra Tip: Statistical-knowledge
+### Extra Tip_1: Statistical-knowledge
 
 1> **Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
  - Range
@@ -515,6 +515,13 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 
 
+-------------------------------------------------------------------------------------------
+### Extra Tip_2: Trial & Error project collections
+## Q1.
+Write a function that returns the most frequently occurring word in a given string. For example, if the input s is `s = 'I scream you scream we all scream for ice cream'`, the result should be scream as it is the most frequent word in this sentence. If there is a tie for the most common word, return only one result, the first (tied) word in alphabetical order.
+```
+
+```
 
 
 
