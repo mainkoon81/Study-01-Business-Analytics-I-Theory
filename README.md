@@ -558,7 +558,7 @@ import datetime
 today = datetime.datetime.today() # or datetime.datetime.now()
 print(today)
 ```
-/// 2018-01-23 22:50:03.543023
+/// 2018-01-23 22:50:03.543023 --- This is a 'datetime object!!!
 
 2. define date and time elements
 ```
