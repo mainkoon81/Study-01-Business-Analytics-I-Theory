@@ -653,6 +653,22 @@ print(b)
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35356890-ac7bd4ec-0149-11e8-9862-4f58c799e5e7.jpg" />    
 
+6. `datetime.timedelta()` it works with `datetime.date()` .... and `datetime.datetime()` as well
+```
+# 3 days later
+print(datetime.date(2018,2,4) + datetime.timedelta(days=3))
+print(datetime.datetime(2018,2,4,5,36,35) + datetime.timedelta(days=3))
+
+# 7 hours later
+print(datetime.datetime(2018,2,4,5,36,35) + datetime.timedelta(hours=7)) 
+
+# etc
+print(datetime.datetime(2018,2,4,5,36,35) + datetime.timedelta(weeks=2,days=3,hours=-3,minutes=30))
+print(datetime.datetime(2018,2,4,5,36,35) + datetime.timedelta(minutes=3,milliseconds=-20,microseconds=400))
+```
+<img src="https://user-images.githubusercontent.com/31917400/35363531-4c377f78-0162-11e8-9d80-bd17fe3d214a.jpg" />    
+
+
 >Practice 2. time module
 
 1. it gives each individual element ?
@@ -699,6 +715,24 @@ time.strptime(timestr, "%a %b %d %H:%M:%S %Y")
 #1 week in sec (week-day-hour-min-sec) = 604800
 1 * 7 * 24 * 60 * 60
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
 
