@@ -619,10 +619,11 @@ date_b = "Sun, 17 Jul 2016 12:34:56 GMT"
 d3 = datetime.datetime.strptime(date_a, "%Y-%m-%d %H:%M:%S")
 d4 = datetime.datetime.strptime(date_b, "%a, %d %b %Y %H:%M:%S GMT")
 
+print(d3)
 print(d4)
-d4.timestamp()
+d3.timestamp(), d4.timestamp()
 ```
-<img src="https://user-images.githubusercontent.com/31917400/35305927-43de08ee-0093-11e8-9c67-7ac8905a747b.jpg" />    
+<img src="https://user-images.githubusercontent.com/31917400/35356079-3fc9b55a-0147-11e8-9e19-814763af6d3e.jpg" />    
 <img src="https://user-images.githubusercontent.com/31917400/35306223-86de549a-0094-11e8-8974-4e545792302a.jpg" />    
 
 >Practice 2. time module
