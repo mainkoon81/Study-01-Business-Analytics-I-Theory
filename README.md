@@ -624,7 +624,7 @@ print(d2)
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35305877-118971a8-0093-11e8-81a8-7234b401ae38.jpg" />    
 
- - timestamp: time (in sec) has passed since 1970/01/01. 
+ - timestamp: time (in sec) has passed since 1970/01/01. it returns a float !
 ```
 date_a = "2016-07-17 12:23:45"
 date_b = "Sun, 17 Jul 2016 12:34:56 GMT"
