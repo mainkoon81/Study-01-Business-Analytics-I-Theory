@@ -557,11 +557,11 @@ Write a function that returns 'the day' that follows a specified time period aft
 import datetime
 my_day = datetime.datetime(1981, 8, 10, 21, 30, 45); my_day
 ```
-/// datetime.datetime(1981, 8, 10, 21, 30, 45)
+/// datetime.datetime(1981, 8, 10, 21, 30, 45) --- This is a 'datetime object!!!
 ```
 my_day.strftime('%Y-%m-%d')
 ```
-/// '1981-08-10'
+/// '1981-08-10' --- I converted it to str!!!
 
  - today?
 ```
