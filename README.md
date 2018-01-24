@@ -559,6 +559,10 @@ my_day = datetime.datetime(1981, 8, 10, 21, 30, 45); my_day
 ```
 /// datetime.datetime(1981, 8, 10, 21, 30, 45) --- This is a 'datetime object!!!
 ```
+print(my_day)
+```
+/// 1981-08-10 21:30:45
+```
 my_day.strftime('%Y-%m-%d')
 ```
 /// '1981-08-10' --- I converted it to str!!!
