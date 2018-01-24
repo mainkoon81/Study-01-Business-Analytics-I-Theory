@@ -676,11 +676,17 @@ time.strptime(timestr, "%a %b %d %H:%M:%S %Y")
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35307250-d5859f68-0099-11e8-9e82-75c00f42b4a1.jpg" />    
 
+ - When caculating, we convert all into 'sec'
+```
+#35 days in sec (day-hour-min-sec) = 3024000
+35 * 24 * 60 * 60
 
+#3 weeks in sec (week-day-hour-min-sec) = 1814400
+3 * 7 * 24 * 60 * 60
 
-
-
-
+#1 week in sec (week-day-hour-min-sec) = 604800
+1 * 7 * 24 * 60 * 60
+```
 
 
 
