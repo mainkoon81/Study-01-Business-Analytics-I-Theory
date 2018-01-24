@@ -552,9 +552,19 @@ Write a function that returns 'the day' that follows a specified time period aft
 >practice 01. datetime module
 
 1. `datetime.datetime` is the combination of 'date'class and 'time'class.
+ - my birthday?
 ```
 import datetime
+my_day = datetime.datetime(1981, 8, 10, 21, 30, 45); my_day
+```
+/// datetime.datetime(1981, 8, 10, 21, 30, 45)
+```
+my_day.strftime('%Y-%m-%d')
+```
+/// '1981-08-10'
 
+ - today?
+```
 today = datetime.datetime.today() # or datetime.datetime.now()
 print(today)
 ```
