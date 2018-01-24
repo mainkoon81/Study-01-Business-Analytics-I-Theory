@@ -654,7 +654,7 @@ print(t2.tm_isdst) ##?????
 ```
  - `ctime()` converts a time expressed in **seconds** since the epoch(1970/01/01) to a string representing local time. If secs is not provided or None, the 'current time' as returned by 'time()' is used.
 ```
-timestr=time.ctime(1234567890) #'Sat Feb 14 08:31:30 2009' format
+timestr=time.ctime(1234567890)  #'Sat Feb 14 08:31:30 2009' is 1234567890 sec 
 
 time.strptime(timestr, "%a %b %d %H:%M:%S %Y")
 ```
