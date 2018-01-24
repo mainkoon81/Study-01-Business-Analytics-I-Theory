@@ -547,8 +547,6 @@ if __name__ == '__main__':
 ```
 
 ## Q2.
-Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
-
 >practice 01. datetime module
 
 1. `datetime.datetime` is the combination of 'date'class and 'time'class.
@@ -702,7 +700,7 @@ time.strptime(timestr, "%a %b %d %H:%M:%S %Y")
 1 * 7 * 24 * 60 * 60
 ```
 
-
+Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
 
 
 
