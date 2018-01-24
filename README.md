@@ -671,7 +671,7 @@ print(datetime.datetime(2018,2,4,5,36,35) + datetime.timedelta(minutes=3,millise
 
 >Practice 2. time module
 
-1. it gives each individual element ?
+1. it gives each individual element ? and has always sth to do with **EPOCH** ?
  - `gmtime()` gives tm_year, tm_mon, tm_mday, tm_hour, tm_min, tm_sec. 
  - Plus, 
    - **tm_wday:** 0 (Mon), 1 (Tue), ....
@@ -715,24 +715,6 @@ time.strptime(timestr, "%a %b %d %H:%M:%S %Y")
 #1 week in sec (week-day-hour-min-sec) = 604800
 1 * 7 * 24 * 60 * 60
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
 
