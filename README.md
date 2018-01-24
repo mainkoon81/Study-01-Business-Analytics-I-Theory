@@ -627,6 +627,20 @@ d3.timestamp(), d4.timestamp()
 <img src="https://user-images.githubusercontent.com/31917400/35356079-3fc9b55a-0147-11e8-9e19-814763af6d3e.jpg" />    
 <img src="https://user-images.githubusercontent.com/31917400/35306223-86de549a-0094-11e8-8974-4e545792302a.jpg" />    
 
+ - We can convert timestamp to the date in the format.
+```
+a = datetime.datetime.fromtimestamp(d3.timestamp())
+print(a)
+```
+<img src="https://user-images.githubusercontent.com/31917400/35356886-a9e16d0a-0149-11e8-957b-4ac5f7732b1a.jpg" />    
+
+ - We can combine date and time.
+```
+b = datetime.datetime.combine(datetime.date.today(), datetime.time(22,22,22))
+print(b)
+```
+<img src="https://user-images.githubusercontent.com/31917400/35356890-ac7bd4ec-0149-11e8-9862-4f58c799e5e7.jpg" />    
+
 >Practice 2. time module
 
 1. it gives each individual element ?
