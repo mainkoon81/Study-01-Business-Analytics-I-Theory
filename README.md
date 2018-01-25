@@ -717,6 +717,30 @@ time.strptime(timestr, "%a %b %d %H:%M:%S %Y")
 ```
 
 Write a function that returns 'the day' that follows a specified time period after an initial date. Time periods can be specified in two different ways: as a number of days like "1 day" or "30 days", or as a number of weeks like "2 weeks" or "12 weeks". This function takes as **input** a string depicting a date in `YYYY/mm/dd` format and a string stating a time period in the form of "X day(s)" or "Y week(s)". **Output** should be a string in form `YYYY/mm/dd` with **the date that is X days or Y weeks after the initial date.**
+```
+ef which_date(start_date,t):
+
+    import datetime
+    initial = datetime.date(int(start_date.split('/')[0]), int(start_date.split('/')[1]), int(start_date.split('/')[2]))
+    if 'day' in t:
+        nex = datetime.timedelta(int(t.split()[0])) 
+    elif 'week' in t:
+        nex = datetime.timedelta(int(t.split()[0])*7)
+    
+    end_date = (initial + nex).strftime('%Y/%m/%d')
+    
+    return end_date
+    
+def test():
+    assert which_date('2016/02/10','35 days') == '2016/03/16'
+    assert which_date('2016/12/21','3 weeks') == '2017/01/11'
+    assert which_date('2015/01/17','1 week') == '2015/01/24'
+    print("All tests completed.")
+
+
+if __name__ == "__main__":
+    test()
+```
 
 
 
