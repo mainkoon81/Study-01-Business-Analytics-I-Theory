@@ -601,7 +601,7 @@ print('we meet at: {}'.format(time_a))
 <img src="https://user-images.githubusercontent.com/31917400/35305674-1aec45be-0092-11e8-9101-c97ef07f989b.jpg" />    
 
 5. manipulation
- - `strftime()` is the way to ask python about the string format we want. It works with`datetime.date()` as well.
+ - `strftime()` -str_Format_time- is the way to ask python about the string format we want. It works with`datetime.date()` as well.
 ```
 today_2 = datetime.datetime.today().strftime('%Y + %m + %d %H peekaboo %M:%S')
 
@@ -610,7 +610,7 @@ type(today_2)
 ```
 <img src="https://user-images.githubusercontent.com/31917400/35305755-80a0e2a2-0092-11e8-99f4-3dc73e6dd916.jpg" />    
 
- - `strptime()` is the way we teach python date&time. Need to introduce certain 'time str' and articulating the format one by one so that python understands. It works with`datetime.date()` as well ?
+ - `strptime()` -str_Parse_time- is the way we teach python date&time. Need to introduce certain 'time str' and articulating the format one by one so that python understands. It works with`datetime.date()` as well ?
 ```
 d1 = datetime.datetime.strptime('2017/12/21 14|00|38', '%Y/%m/%d %H|%M|%S')
 
