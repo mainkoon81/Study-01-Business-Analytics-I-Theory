@@ -234,98 +234,15 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
        - The averaged results from the forest model helps deal with the decision tree model's bias to overfit the data
 
 ------------------------------------------------------------------------------------------------------------
-## A/B testing 
- - When a company wants to test new versions of a webpage? 
- - A/B testing is crucial for businesses who want to test out scenarios where there is no good data to make predictions of these scenarios. The only way to find statistically significant results is to setup a test and compare the results against the control.
- - A/B tests are used to test changes on a web page by running an experiment where a control group sees the old version, while the experiment group sees the new version. A **metric** is then chosen to measure the level of engagement from users in each group. These results are then used to judge whether one version is more effective than the other. A/B testing is very much like hypothesis testing.
-   - Null Hypothesis: The new version is no better, or even worse, than the old version (H0: 'new' =< 'old')
-   - Alternative Hypothesis: The new version is better than the old version (H1: 'new' > 'old')
- - If we reject the null hypothesis, the results would suggest launching the change. These tests can be used for a wide variety of changes to see what change maximizes your metric the most.
- - A/B testing also has its drawbacks: 
-   - Type I. (Says False, but H0 actually True) Change Aversion or `false positives`: Existing users may give an unfair advantage to the old version, simply because they are unhappy with change, even if it’s ultimately for the better.
-   - Type II. (Says True, but H0 actually False) Novelty Effect or `false negatives`: Existing users may give an unfair advantage to the new version, because they’re excited or drawn to the change, even if it isn’t any better in the long run.
-
-> Scenario: You are a brand manager for a large candy manufacturer. The product development team has been hard at work coming up with a new line of products. As this is new, the company is unsure if it will be successful, you are being asked to predict the effect on sales if the new product is introduced so the management can determine if the product should go into full distribution ! We have no past information to help us build a model. so...SET UP AN EXPERIMENT !
-
-### You should define first...terminology
- - Unit: 
-   - A corporate recruiting company wants to determine if they let their employees work from home: Unit = An employee
-   - A farmer wants to know if planting a seed deeper will slow down the growth of his crops?: Unit = A plant
- - Group: Treatment Grp / Control Grp 
- - Treatment variable: variable we can change to see how it affects the target variable.
- - Control variable: predictors but has a purpose to create a 'baseline' to make the comparison as accurate as possible. 
- - Testing correlation to choose potential variables...make them comparable.  
- - Lurking(confounding) variable: when a variable is highly correlated with both target and another control predictors, this can cause to overweighted control variable. For example, Y=No.of death from drowning, X=icecream consumption, when they show a linear relationship, it's because of 'temperature' - Lurking variable. 
-
-### Experimental Design
- - Randomized Design
-   - treatment and control units are selected randomly. For example: when there is a very little ability to control variables, and 'volumn and velocity' of data is high enough so we are not worried about bias, the cheap cost per obv - web_based experiment, phone_based experiment.
- 
- - Matched-Pair Design
-   - When Volumn of obv is low, High concerns of bias, High cost per obv. Treatmenats are matched by controls on a unit to unit basis, using a weighting of the identified control variables. The goal is to create two grps of units that are as similar as possible to each other so that we can confidently say that any changes during the test are due to the introduction of the treatment variable. 
-
-Many companies have a set of test(treatment) units they use over and over (Target mart, Houston?). In our experiment, a matched-Pair design would involve taking each treatment unit and finding one or more similar control units to match it to. Creating pairs. Analysis is done on a pair by pair basis, then aggregated to a single result. This unit by unit matching helps eliminate sources of bias, increase the confidence in results in spite of not enough obv size.   
-
-### 1) Randomized Design
-**Units are assigned randomly to (control/treatment) Grp**
-> Scenario: the company's main goal is to drive more customers to download their app and register for their loyalty program. One way is via a link on the company website. Page viewing statistics show only 10% of people who visited the main page are clicking through to visit the page describing the app and the program. your Manager has asked you to set up an experiment to test whether changing the button of the page link (the modified page) would improve the click-through-rates. 
-
- - Selecting variables
-   - Target variable: whether or not an individual clicked on the link(binary)
-   - Experiment: compare difference in the 'click-through-rate' for 'control Grp' / 'treatment Grp'
-   - control: the original main page
-   - control variables: 
-     - Type of people(socioeconomic standing, demographic profile, etc)
-     - people ID
-     - Membership
-   - treatment: the modified main page with the new botton design
-   
- - Key factors to determine in setting the randomized experiment
-   - Unit of Diversion: How you will assign units to the control/treatment Grp (IP Address)
-   - Population: All visitors that don't have the app (visitors w/o account)
-   - Duration: Does it represent true population? (1 week)
-   - Size: Does it represent true population? (1/3 treatment, 2/3 control)
->Then start collecting data !!!
-
- - Data Preparation
-<img src="https://user-images.githubusercontent.com/31917400/34589783-83d05b52-f1aa-11e7-9980-03fcb9da04b6.jpg" width="600" height="320" />  
-
-*Q. How can we be sure the difference in their mean or variance we see in the test actually exist in the entire population? A Randomized design experiment is analyzed using a `t-test`(statistical calculation of whether the mean values of the treatment and control Grp are the same or different).  
-<img src="https://user-images.githubusercontent.com/31917400/34590905-986b2a5e-f1b1-11e7-9fb6-80cb2edb7515.jpg" width="600" height="150" />  
-<img src="https://user-images.githubusercontent.com/31917400/34591933-b84501a4-f1b8-11e7-8af6-757480b86474.jpg" /> 
-
-### 2) Matched-Pair Design
-**Taking each treatment unit and finding one or more similar control units to match it to.**
-> Scenario: In the candy manufacturer, for the new product introduction experiment, let’s say that your manager has assigned a set of 10 treatment stores in California where the Grape flavor of the product will be sold. 
-
- - First, Selecting Treatment Unit
-<img src="https://user-images.githubusercontent.com/31917400/34610163-c6623bf8-f217-11e7-8492-b7c71d2edacb.jpg" width="600" height="250" /> 
-
- - Next, Selecting Control Unit
-<img src="https://user-images.githubusercontent.com/31917400/34616859-618ec434-f231-11e7-9431-dee68a0eb769.jpg" width="600" height="180" /> 
-
- - So we need a method to find the best control unit to match to the selected treatment unit.
- - Issue A. `AB_Control tool`
-   - It takes all of numeric variable and calculates a single value that determines how far the treatment unit is from each control unit (Distance Score). 
- - Selecting Multiple Control Units
-   - This increases the confidence in the baseline and makes for a better comparison, but how many to choose?
-   - Sould stop at point where the average distance increases significantly! Find the balance b/w more matches and average distance b/w matches. 
-<img src="https://user-images.githubusercontent.com/31917400/34621189-0fdc21cc-f240-11e7-96ec-978f2fa4b9ca.jpg" /> 
-
-*Q. The experiment has run for a month and now the results are in, it's time to dig into the result. We are comparing each treatment unit to one or more control units on a unit by unit basis. A Matched-Pair design experiment is analyzed using a `paired t-test` i.e, each data pt is a before-after pair.
- - Issue B. `AB_Analysis tool`
-<img src="https://user-images.githubusercontent.com/31917400/34629701-0e77d4d6-f261-11e7-9e5c-2f53bbcd3e8e.jpg" /> 
-
-*Q. Using data from 2010, including the week ending on 2011-1-1, what is the **incremental impact to sales** using a 6.4% lift per week per customer per store?
-<img src="https://user-images.githubusercontent.com/31917400/34631846-4968b14c-f26a-11e7-8bae-73e6f646a2f7.jpg" /> 
-
-------------------------------------------------------------------------------------------------------------
 ## Time-Series forecasting 
- - It is the use of a statistical model to predict future values based on past results. 
- - Using any variables that can be tracked and collected over time (annual population, daily stock price, quarterly sales)
- - How do I define time? What are trends? What are seasonal patterns? 
- - Forecasting Model - Exponential Smoothing(ETS), Auto Regressive Integrated Moving Average(ARIMA)
-
+Forecasting Model: Exponential Smoothing(ETS), Auto Regressive Integrated Moving Average(ARIMA)
+ - An Intro to Time Series Analysis 
+ - Trends in Time Series 
+ - Time Series Decomposition 
+ - Advanced Models of Univariate Time series
+ 
+ 
+ 
 ### Attributes of a Time Series
  - It's over a **continuous** time interval
  - There are **sequential** measurements across that interval
@@ -377,13 +294,6 @@ Choosing the Smoothing Parameter α
 #### 3> Exponential Trend Method
 #### 4> Damped **Trend** Method
 #### 5> Holt-Winters **Seasonal** Method
-
-
-
-
-
-
-
 
 ### ARIMA Model
  - (Non_Seasonal Model (p.d.q) / Seasonal_Model)
