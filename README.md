@@ -265,7 +265,7 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
 
 
 -------------------------------------------------------------------------------------------
-### Extra Tip_1: Statistical-knowledge
+# Extra Tip_1: Statistical-knowledge
 
 1> **Measures of Spread** are used to provide us an idea of how spread out our data are from one another.
  - Range
