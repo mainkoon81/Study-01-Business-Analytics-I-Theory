@@ -78,8 +78,9 @@ help businesses predict future behavior based on existing data such as "Given th
     - Non-Numeric Types: 1)binary, 2)Non-binary
   - Step3. Model Selection 
 --------------------------------------------------------------------------------------------------------------------------------------  
-## Predictive Analysis
-## 1) [Basic Linear Model]: For Numeric & Continuous outcome
+# Predictive Analysis
+
+## 1) [Linear Regression]
 >Imagine we have the data displayed in the scatter plot. It appears that we have a linear relationship between the number of employees and the number of tickets. The relationship appears to be linear since it seems like we can draw a straight line through the data. If we know the **equation** of the line, we can predict values for tickets given a certain number of employees. 
 
 ```
@@ -125,7 +126,20 @@ __Issue C. Categorical Predictors:__ what will happen in linear regression when 
 
 A dummy variable can only take on two values 0/1. We would add dummy variables for one less than the number of unique values in the categorical variable. So if there are four categories, you'd add three dummy variables. For example, in Y=β0+β1(x1)+β2(x2), we add categorical variable 'C' that consists of 4 categories (c1,c2,c3,c4)-(0/1,0/1,0/1,0/1), then Y=β0+β1(x1)+β2(x2)+β3(c1)+β4(c3)+β5(c4). We don't create a variable for 'c2' because the equation needs a 'baseline value' that is not coded into a dummy variable. If a variable is in 'c2', then the value for all three of the dummy variables would be zero. The interpretation of the coefficient of 'c3', the dummy variable above, is that it represents the **"average difference"** between the response value in c3, compared to in c2. 
 
-## 2) [Classification Model]: for Non-numeric & Discrete outcome (identifying what "group" a data point belong to)
+__Issue D. Variable transformation:__ People often transform in hopes of achieving normality prior to using some form of the general linear model (e.g., t-test, ANOVA, regression, etc). But I fear that in many cases, people make two mistakes when doing so:
+ - 1. They look at normality of the outcome variable rather than normality of the errors. For OLS models, it is the errors that are assumed to be independently and identically distributed as normal with mean = 0. (Some people also assume that explanatory variables in regression models must be normally distributed. But that is clearly incorrect. For example, an OLS linear regression model with one dichotomous explanatory variable is equivalent to an unpaired t-test, which is a perfectly good model.)
+ 
+ - 2. They overestimate the importance of the normality assumption. Or putting it another way, they underestimate the robustness of OLS models to non-normality of the errors. (And in reality, they are never truly normal anyway. As George Box noted, normal distributions and straight lines don't exist in nature; but they are still useful approximations to the statistician.)
+In the context of OLS models, transformations are more often about stabilizing the variance, it seems to me--e.g., the log transform when the SD is proportional to the mean. But in some contexts, one may transform to obtain a test statistic that has an approximately normal sampling distribution--e.g., the sampling distribution of the odds ratio (OR) is not normal, but the sampling distribution of ln(OR) is asymptotically normal with SE = SQRT(1/a + 1/b + 1/c +1/d) where a-d are the 4 cell counts in the 2x2 table.
+
+http://fmwww.bc.edu/repec/bocode/t/transint.html
+
+
+
+
+
+
+## 2) [Classification Model]
  - >Logistic Regression (Binary-classification)
  - >Decision Trees (Binary-classification) 
  - >Random Forests (Multi-classification)
@@ -187,6 +201,12 @@ __2. Decision Tree:__ It analyzes the data as if it was a series of decisions. I
      - Create a dataset that contains only the individuals who have a greater than 50% probability of redeeming an offer.
      - Only include the Customer Key, First and Last Names, and the likelihood they will redeem an offer.
      - Sort the data with the highest likelihood individuals are at the top.
+ 
+ 
+ 
+ 
+ 
+ 
  
 ### Non-Binary-Classification (Non-Binary Response variable)
 >For example, in our company, the insurance policy has a reward based benefit offer. This benefit varies depending on what mode of transportation an employee takes to work. Our company ran a survey to understand the mode of transportation of our employees and only 60% responded. What our management would like to do is **predict the mode of transportation of the other 40% of employees.** This would help us better estimate what benefits we can offer.
@@ -264,6 +284,9 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
 
 
 
+
+
+
 -------------------------------------------------------------------------------------------
 # Extra Tip_1: Statistical-knowledge
 
@@ -274,25 +297,12 @@ __2. Gradient-tree boosted Model:__ Forest Models might give us a better estimat
  - Variance
 When we have data that follows a normal distribution, we can completely understand our dataset using the 'mean' and 'SD'. However, if our dataset is skewed or when we have outliers, the 5 number summary (min,IQR,max) might be better to summarize our dataset.
 
-2> Descriptive statistics is about describing our collected data.
- - measures of center 
- - measures of spread 
- - shape of distribution
- - outliers and plots of data
- 
-3> Inferential Statistics is about using our collected data to draw conclusions to a larger population.
- - Population: our entire group of interest.
- - Parameter: numeric summary about a population
- - Sample: subset of the population
- - Statistic: numeric summary about a sample
-The way we perform inferential statistics is changing as technology evolves. Many career paths involving Machine Learning and Artificial Intelligence are aimed at using collected data to draw conclusions about entire populations at an individual level. 
-
-4> Simpson's Paradox
+2> Simpson's Paradox
  - the way we choose to look at our data can lead to the different result.
 <img src="https://user-images.githubusercontent.com/31917400/34156013-515bc6ec-e4b3-11e7-82ba-38e1f7a49784.jpg" width="400" height="125" /> 
 <img src="https://user-images.githubusercontent.com/31917400/34170221-f0ad18a8-e4e1-11e7-9517-056f9c4b5bbf.jpg" width="500" height="180" /> 
 
-5> Discrete Random Variable "P(X=x)=f(x): y-value"
+3> Discrete Random Variable "P(X=x)=f(x): y-value"
  - x: outcome (whether **Numeric** or Non-numeric) just like "bins"
  - P(X=x): probability of x: freq/total_freq...it's a ratio.
  - f(x): probability function, thus... sum(f(x)) = 1
@@ -323,9 +333,8 @@ The way we perform inferential statistics is changing as technology evolves. Man
      - P(X=x)=f(x) = 1/n
      - E[x] = (n+1)/2
 
-6> Continuous Randome Variable "P(X<=x)=F(x): area"
-
-7> Examples
+4> Continuous Randome Variable "P(X<=x)=F(x): area"
+.....
 
 
 
