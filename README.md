@@ -339,6 +339,362 @@ When we have data that follows a normal distribution, we can completely understa
 
 
 
+# Study-01-Business-Analytics-II
+Cloud Computing
+
+-----------------------------------------------------------------------------------
+> What is the Operating System? 
+ - For big device: Windows, Linux, Unix, MacOS-X... 
+ - For small device: Android(google), iOS(apple)...
+
+OS offers a **user_interface** to multiple hardwares(devices). It runs a special piece of codes called a **device driver** so that OS can manage these different resources(so that we don't need to care how each divices interact with each other). Aside form this, it schedules tasks, allocates storage, and shows a default interface to human users when no application is running. 
+
+> What is the Distributed System?
+ - A collection of multiple machine that appears as a single machine? It is in contrast to a network where the user is ware that machine's location, storage replication, load balancing, unknown functionality? It has 3 characteristics: 
+   - 1)multiple machine 
+   - 2)interconnections
+   - 3)shared state? 
+ - In a more technical term, it is a collection of entities, each of these entities being autonomous, programmable, **asynchronous** and failure-prone, and these entities communicate through an unreliable communication medium. 
+   - Each entity is essentially a process running on a single device: stand-alone **autonomus** 
+   - Each has written code running underneath inside the process: **programmable** (you cannot program humanbeings to interact)
+   - *Each process runs according to its own clock that are not always synchronized with each other: **asynchronous**
+     - which distinguishes this from parallel systems such as supercomputer with huge number of processors sharing the same motherboard. 
+   - Each may crash arbitrarily at any point in time: **failure-prone**
+   - When communicating each other, the data might be able to be dropped or delayed: **unreliable communication**
+<img src="https://user-images.githubusercontent.com/31917400/44532050-1f26e180-a6ea-11e8-89e0-dd3234952dfd.jpg" />
+
+> So...What do we need to know? 
+ - P2P system: BitTorrent, Kazza
+ - Infrastructure: AWS, AZURE, GoogleCloud
+ - Storage: NoSQL, Cassandra
+ - Programming: MapReduce, Storm
+ - Coordination: Paxos, Snapshots
+ - Management: Concurrency(accessing the same data), Replication Control
+
+> 5 Essential Characteristics in Cloud
+ - 1.On Demand Self-Service: Provision them by ourselves
+<img src="https://user-images.githubusercontent.com/31917400/44717773-e2763400-aab5-11e8-9686-ed67b5ccb476.jpg" />
+
+ - 2.Broad Network Access: Access them using the network
+<img src="https://user-images.githubusercontent.com/31917400/44718426-f02cb900-aab7-11e8-8670-e414d06a3f9b.jpg" />
+ 
+ - 3.Resource Pooling: Allocate specific resources from a pool
+<img src="https://user-images.githubusercontent.com/31917400/44720973-5ddce300-aac0-11e8-99b7-56fd3c6d7f1e.jpg" />
+
+ - 4.Rapid Elasticity:
+<img src="https://user-images.githubusercontent.com/31917400/44722628-887d6a80-aac5-11e8-8216-7486c6c16394.jpg" />
+
+ex) All over the night until around 08:00 morning time the load on the server is quite low, then people are coming to the office, connecting to their email accounts, so the load will keep increasing as more people are using the system up to some pick workload. Around 4:00 PM people are starting to leave the office and the load is going down again.
+ 
+ - 5.Measured Service:
+<img src="https://user-images.githubusercontent.com/31917400/44723064-df377400-aac6-11e8-8ba4-2af779fcfb5d.jpg" />
+ 
+> 3 Service Model
+ - 1.IaaS
+ - 2.PaaS
+ - 3.SaaS
+ 
+> 4 Deployment Model
+ - 1.Public Cloud
+ - 2.Private Cloud
+ - 3.Hybrid Cloud
+ - 4.Community Cloud
+
+-----------------------------------------------------------------------------------
+## Overview
+__Q0. What is a server?:__
+ - A server is a **computer program** or a **device** that provides functionality for other programs or devices, called "clients" (client-server model). Because of this, a single overall computation can be distributed across multiple processes or devices. 
+ - Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients, or performing computation for a client.
+ - A single server can serve multiple clients, and a single client can use multiple servers. A client process may run on the same device or may connect over a network to a server on a different device.
+ - Client–server systems are today most frequently implemented by (and often identified with) the **request–response model**: a client sends a request to the server, which performs some action and sends a response back to the client, typically with a result or acknowledgement. Designating a computer as "server-class hardware" implies that it is specialized for running servers on it. Servers are often referred to as **dedicated** because they carry out hardly any other tasks apart from their server tasks. Server computers often have special operating systems not usually found on personal computers.
+## what;s the difference b/w host and server? 
+
+__Q1. Define Cloud Computing:__
+ - `Cloud` means a **network** delivering **requested virtual resources** as a SERVICE. 
+ - Cloud_Computing is a model for enabling **on-demand** network access to a `shared pool of configurable computing resources`(:Network, Server, Storage, Application, etc) that can be rapidly provisioned and released with minimal management effort(service provider interaction).    
+ 
+__Q2. Describe the key characteristics of CC:__   
+ - Using the cloud, we can rent the hardware, software w/o purchasing outright. It offers a consistent deployment configuration(prebuilt-solution stack). 
+ - It enables `Self-Service`, `Sourcing options`(so many services..development environment? platform? IaaS, PaaS, SaaS), `Economies of scale`(as ur business grows,..?)
+ 
+ - 1.**On-demand Self-Service**:
+   - delivering IT services driven by user requests w/o human interaction
+ - 2.**Ubiquitous network access**:
+   - delivering IT services anytime, anywhere via user-choosen devices
+   - Just like electricity from a wall outlet
+ - 3.**Pool of virtualized resources**:
+   - delivering IT services via resource pool that can expand/contract based on the required underlying workload, characteristics  
+ - 4.**Utility-based pricing**: 
+   - delivering IT services that can be metered for usage
+ 
+__Q3. Describe the benefits of using CC:__
+ - 1.Better capital utilization
+   - the unit cost of on-demand capacity may be higher than that per time unit of fixed capacity, this is offset by not having to pay for the resources when not in use. 
+ - 2.accelerate software development
+   - faster provisioning of resources is a key benefit (instead of taking weeks to set up the environment, it can be provisioned in minutes). 
+ - 3.elasticity of resources
+   - access to a pool of a virtualized resources that expanding/contracting, thus pay only for the resources you used. 
+ - 4.access to complex infrastructure and resources w/o internal resources
+   - provisioning of infrastructure and application services can be outsourced to CC. 
+ - 5.support for geographically distributed users
+   - access are based on standard internet transports and protocols 
+ - 6.New business opportunities
+   - for providers to host cloud services and vendor applications
+   
+__Q4. Describe some driving factors towards using CC:__ 
+ - 1.**poorly utilized resource** driving up hardware, labor costs
+   - setting up a new environment is pricey
+   - obtaining new hardware for new project is pricey
+ - 2.**too long lead time** (a month) to create middleware infrastructure(new application environment)
+   - Approvals - procurement - shipment - installation - license_procurement - OS_installation - configuration - application_ installation
+ - 3.**error-prone manual process** to create middleware infrastructure
+   - emerging when moving from test to production
+ - 4.**under-utilized, Idle resources** during non-peak times(off-peak periods)
+   - Each application must be sized to support peak load
+ - 5.**degraded quality of service** during periods of exceptional load  
+   - need more resources. need sth that can be provisioned and deprovisioned on demand
+   
+__Q5. Describe some of the concerns:__
+ - 1.**Maturity**: ..Is it hype? Ready for producion-level deployment? Ready for prime-time? 
+ - 2.**Standards**: ..in progress. See OpenCloudMenifesto
+ - 3.**Security**: ..Many sharing the same resources. Mitigated via encryption? Only making public domain data available in public clouds?
+ - 4.**Interoperability**: ..vendor APIs are different. Can we write code supported across lots of different cloud_providers? 
+ - 5.**Data_Control**: ..what does a company do to be in control of their own data? The use of provate clouds? 
+  
+__Q6. Compare Grid_Computing with CC:__
+ - There are several situations where Grids and Clouds can be used together. **Grids offer automatically scalable resources??** made available over a network. From this point, there is a convergence with clouds. Grids involve applying the resources of many machines in a network, working in parallel to solve a single problem at the same time while Clouds offer resources for many independent tasks.
+ - If positioning CC to a Grid infrastructure, Grids link disparate computers to form one large virtual infrastructure, leveraging unused resources. Grid sizes vary from forming a 'super virtual computer'(loosely coupled machines??) to a smaller redundant dual machine system, but because of fixed network connection, we ourself should do all configurations(including load balancing) as we add extra machine, thus in Grids, we should know where the network is located(physical location).  
+   - **Arch** 
+     - Grids: Service-Oriented
+     - Clouds: User-Specified
+   - **Platform_Awareness**
+     - Grids: Client software must be Grid_enabled
+     - Clouds: Works in a customized environment provided by the service provider
+   - **Scalability**
+     - Grids: Nodes
+     - Clouds: Nodes + Infrastructure
+   - **Standardization**
+     - Grids: Interoperability and Standards
+     - Clouds: Lack of standards for interoperability
+ 
+__Q7. Examples of CC:__
+ - Commercial Public Clouds:
+   - Made available via the Internet, offering services across open networks 
+   - (almost) Free to use
+ - Private Clouds: TBD
+
+-----------------------------------------------------------------------------------
+## Concepts
+__Q1. Describe how CC leverages the Internet:__
+ - CC is Internet-based computing whereby shared resources, software, information are offerred to computers on-demand. As a new consumption and delivery model inspired by `Consumer Internet Services`, simply CC is an **online environment for access** to computer resources: computing power, Storage, Management, Applications.
+   
+__Q2. Describe elasticity & scalability:__
+<img src="https://user-images.githubusercontent.com/31917400/46347089-37234680-c642-11e8-8296-33eb7744c96c.jpg" />
+
+ - **Elasticity(both direction) & Scalability(one direction)** is the ability to expand/shrink a computing resources in real time based on user's need. CC does always **"right-sizing"** to what is required and can measure usage by uptime(this usage must meet SLA_serviceLevelAgreements while minimizing cost). CC scale up to meet demand, scale down when higher demand is not required.
+   - Why prefer VM Server Scaled up/down over physical Server Scaled up/down? -> speed, energy consumption
+
+__Q3. Define Virtualization:__
+ - Take one machine and split it up into multiple machine.  
+ - Virtualization involves: Hardware, Networks, Storage, OS, Applications, Desktop??, **DATA**??
+ - (+): the software is decoupled from the hardware(being independent of the hardware), which allows hosting an individual application in the environment isolated from underlying OS. It improves **IT resource utilization:** treating IT physical resources as logical resources, it consolidates the resources into a virtual environment(virtual CPU, virtual RAM, virtual HardDrive, virtual Networks). With it, one physical resource can look like multiple resources that have functions, features that are not available in their underlying physical resources(but when it comes to the performance it can't do outside of the physical, sth might have to lose out). 
+   - `Reduced hardware cost`
+     - enables to have a 'single server' function as 'multiple virtual server'.
+     - You can manage resources to reduce operation, system management costs.
+   - `Optimization of workload`
+     - increases the usage of existing resources by enabling dynamic sharing of resource pool.
+   - `IT flexibility and responsiveness`
+     - enables to have a single, consolidated view of all available resources in the **network which are easily accessible regardless of location**.
+     - enables to reduce the **management of your environment** by providing 
+       - `emulation for compatibility` ??? while migrating from old environment, we can still use the old one.
+       - `improved interoperability` ??? 
+       - `transparent change windows` ???
+
+__Q4. List the characteristics of virtualized environment:__
+ - **Partitioning**: makes it possible to run multiple applications and OSs in a single machine.
+ - **Isolation**: VMs are completely isolated from hosts and other VMs
+   - crash of a VM does not affect other VMs
+   - data is not shared b/w VMs
+   - only communicate via specifically configured network connections 
+ - **Encapsulation**: it is possible to encapsulate entire state of VM in `hardware-independent files`.
+   - the `hardware-independent files` contain the OS, application files, and VM configuration.  
+
+__Q5. Define Hypervisors:__
+ - 'OS' would be called 'supervisor'. With the ability to run OS on other OS, the term 'hypervisor' resulted. It's a piece of code.
+ - For example, VMware ESX(type_1), it is a virtualization software allowing multiple OS to run concurrently.
+ - it uses a `thin layer of code` in software or firmware to achieve fine-grained, dynamic resource sharing(your OS consumes all resources of your machine while Hypervisor allocates the part of the resources of the machine to each OS). 
+ - it provides the greatest level of flexibility in **how virtual resources are defined and managed** (coz it controls exact what size each VM will be) thus it is a primary technology of choice for system virtualization (it becomes industry standard)
+ - it may mediate access to CPU, RAM, Hard, Network. ????
+ 
+__Q6. Virtualized VS NonVirtualized systems(servers):__ 
+<img src="https://user-images.githubusercontent.com/31917400/46361578-f3423880-c665-11e8-9163-55730ca9d016.jpg" />
+
+ - NonVirtualized System: Because each system(server) has its own separate hardware, the amount of processing power available to each application is fixed. For example, application_A comes under heavy use while application_B is idle thus, the processing capacity on B might be underused.    
+ - Virtualized System: By running both applications A, B on the same hardware `through a hypervisor`, you can direct resources to the system thus, hypervisor can offer more processing capacity and memory to the application being used more heavily.   
+
+__Q7. Describe the types of Hypervisors:__
+<img src="https://user-images.githubusercontent.com/31917400/46363862-153eb980-c66c-11e8-98bd-84be11b15240.jpg" />
+
+ - **type_I**(native, bare metal): runs directly on the system hardware.
+   - Iy is typically the preferred approach coz they achieve higher performance efficiency, availability, security. 
+ - **type_II**: runs on a host OS providing virtualization services such as I/O device support, memory management.
+   - mainly used on client systems where efficiency is less critical.
+   - mainly used on a host OS or systems where support for a broad range of I/O devices is important ????
+
+__Q8. Provisioning VS Deprovisioning:__ main benefit is scalability?
+ - **provisioning** refers to the processes for the deployment and integration of cloud computing services within an enterprise IT infrastructure. From a provider’s standpoint, cloud provisioning can include the supply and assignment of required cloud resources to the customer. For example, the creation of virtual machines, the allocation of storage capacity and/or granting access to cloud software. So it offers 'resources availability' to USERS, SOFTWARE.
+   - it controls 'applications available to users. 
+   - it controls 'servers_resources' available to applications.
+   
+ - **deprovisioning** offers 'resources reduction' to USERS, SOFTWARE while deallocating 'back_end' resources. It refers the process of removing access of an individual user to an organization’s resources. This can include removing user accounts on individual machines or servers, or from authentication servers. It can also include removing a user’s machine entirely. De-provisioning is usually done when a user leaves an organization. 
+   - Freeing up hardware, software associated with those application. 
+ - Self_Service provisioning allows customers to request the 'amount of computer services' w/o going through a lengthy process.
+   - computing, storage, software, process, other resources.
+ - fast provision, fast decommission show the maturity of the hosting provider.   
+
+__Q9. Describe Multitenancy:__
+ - CC must enable multitenancy(different companies sharing the same underlying resources).
+ - Multitenancy is the ability to deliver an application to multiple clients from a single instance of software. 
+ - When building SaaS applications, or PaaS, ORGANIZATIONS? should design applications with multitenancy in mind to minimize the '/tenant' cost of delivery. Technical challenges associated with **building a multitenants application** include: access control, customization(data, user interface, business logic), and isolation of data.
+<img src="https://user-images.githubusercontent.com/31917400/46371899-80df5180-c681-11e8-9274-f7db769d7408.jpg" />
+ 
+ - 1)SaaS modes of multitenancy
+   - Simple multitenancy(Single-tenancy):
+     - Each customer has his own resources segregated from other customers
+     - relatively inefficient
+   - Fine_grain multitenancy(Multi-tenancy):
+     - All resources are shared, but the customer data and access capabilities are segregated within the application
+     - It's more efficient, offering superior economies of scale
+ - 2)PaaS mode of multitenancy
+     - it allows multiple customers to run their copy separately from other customers through virtualization.
+     - Each customers code is isolated from each other.
+ - The key technical challenge of multitenancy is how to support multiple client organizations from shared instances of the software solution.      
+__Extra:__
+ - API: refers a collection of interfaces providing access from one system into another's software. CC service should have standardized API defining how multiple 'applications' and 'data sources' communicate each other. It allows customers infrastructure, applications to plug into the cloud. Cloud APIs haven't been standardized yet.   
+ - Metering of Services: cloud usage is tracked via metered services (No.of user, capacity used, services leveraged). Note SLA coz too many incidental charges. 
+ - Economies of scale: refering the cost advantages that an IT vender obtains due to expansion.
+   - AVG_cost/unit decreases as the scale of input increases.
+   - The more resources used, the cheaper the price per resources. 
+   - It's reducing the cost over time, which leads to greater adoption of the technology.
+   
+__Q10. Describe management(governance, tooling, automation):__
+ - 1)**Governance:** a process(including principle, rules) of applying policies relating to using services. It tells a shared responsibility b/w users and the provider(understanding boundaries of the USER and Cloud is critical).
+   - Ensure the IT assets are implemented in accordance with the agreement
+   - Ensure the IT assets are properly maintained 
+   - Ensure the IT assets are offering proper value, supporting the customer's goal
+   
+   - > Some Risk moving into a Cloud Environment
+     - Audit and compliance Risk(data access ctrl, jurisdiction, audit trail, etc)
+     - Billing Risk(accurate billing?)
+     - Contract Risk(provider out of business?)
+     - Security Risk
+     - Information Risk(protecting intellectual property?)
+     - Interoperability Risk
+     - Performance, Availability Risk(KPI being maintained?)
+   - > Management
+     - Desktops in the Cloud
+       - In a `virtualized desktop`(in the cloud), the applications, data, files, graphics are separate from the physical desktop and stored in the data center(cloud). 
+       - The popular approach is VDI(virtual desktop infrastructure). The `virtual client desktop` is created on the server. VDI hosts a desktop OS on a centralized server in a data center(cloud). VDI is a variation on the `client-server computing model`, sometimes referred to as `server-based computing`. 
+       - There are 4 types of `virtual client desktop`:
+         - Session_based Computing: the user is running a session on the server.
+         - OS streaming: the client OS software is passed to the device but only as much as needed. Some of the processing is occurring on the local machine. The application, data, files, graphics are split b/w client and server, streamed to the client when needed. 
+         - VDI: VMwareESX, Citrix have these.
+         - PC Blade: an entire PC can be contained on a single blade slotted into a blade cabinet. A server blade can contain lots of PC blades. The desktop is a thin client used to access the PC blade. ?? fuck. pc and desktop is different???
+     - Devices in the Cloud
+       - managing assets 
+       - monitoring services
+       - change management
+       - security
+       
+ - 2)**Tooling:** Each layer of the cloud environment(application, platform, infrastructure) contains tools.  
+   - it guides users via the physical makeup of the cloud (based on the expected demand characteristics) ?????
+   - it assists: 
+     - allocation of physical resources
+     - asset management
+     - resource virtualization
+ 
+ - 3)**Automation:** it goes hand in hand with virtualization. As you know cloud environment implies dynamic scaling based on demand. Implementing a manula process is too time-consuming. Automation realizes the value of virtualization: `dynamic scaling`
+   - Why? "scale, speed, cost" of deployment, dynamics of the environment..
+   - Automation can be used for security as well...(such as policies, licensing..) 
+ 
+ - 4)**Security:** CC presents an added level of risk because essential services are outsourced to a third party. CC shifts CTRL over data and operation from client to provider. 
+   - What's the issue? Do I need to know? 
+
+-----------------------------------------------------------------------------------
+## Cloud Service Delivery Models
+__Q1. Describe CSDM:__
+ - There are three models deployed on the top of an `cloud infrastructure that has key characteristics of clouds`. Having access to all three gives the most flexibility for optimizing your environment. 
+   - **SaaS**: Use of software(application) delievered via a network
+     - The software no longer reside resides on the customer's machine.
+     - Instead, the user access the applications running on a cloud infrastructure using various devices via a `thin-client interface` such as a web-browser. 
+     - EX> web-based email running on a cloud  
+   - **PaaS**: the middleware plarform and solution stack?? accessible on the cloud
+     - Customers can develop, test, deploy their applications.
+     - middleware means "software acting as an intermediate layer b/w applications or b/w client and server. It is used to support distributed applications in heterogeneous environment???? 
+   - **IaaS**: provision servers, storage, networking resources
+<img src="https://user-images.githubusercontent.com/31917400/46614029-b619f280-cb0c-11e8-9f30-1ab8c1c162b2.jpg" />
+
+> Notice that each service model builds on the cloud infrastructure, and each model higher up on this diagram is more restrictive in the resources it makes available to the client. These services model architectures can be used together, in which case, the client has access to all resources of the **service model stack**. 
+ - SaaS delivers only applications. It may conceivably be used as part of PaaS, IaaS, in which case, the user has access to the platform and infrastructure respectively.
+ - On its own, SaaS is the least flexible. If you add PaaS, you can create, deploy, test the application (then can get more flexibility in how the application performs). 
+ - Adding IaaS gives the ability to add or remove system resources(servers, storage, firewall, etc).  
+<img src="https://user-images.githubusercontent.com/31917400/46670627-93e6aa00-cbca-11e8-82b8-c169dda5dde2.jpg" />
+
+__Q2. SaaS:__
+ - Under the SaaS model, `SP(service_provider)` **is responsible for creation, updating, maintenance of the application** including the licensing the software?? Users rent the software on a per usage basis or buy a subscription. The service is accessed as a web application or as a wrappered web services application invoked using web services APIs. 
+ - WTF SERVICE PROVIDER IS A SOFTWARE PROVIDER? platform provider? 
+ - Service user accesses the service through Internet_based interfaces. ???????????????
+<img src="https://user-images.githubusercontent.com/31917400/46670547-61d54800-cbca-11e8-9637-c2095cf96306.jpg" />
+
+__Q3. PaaS:__
+ - Under the PaaS model, SP(service_provider) supplies the software platform or middleware where the applications run. `User` **is responsible for creation, updating, maintenance of the application**. The sizing of the hardware required for the execution of the software is made in a transparent manner. Platforms in the cloud are an interesting offering that takes the pain away from having to set up the software platform or middleware.
+ - Ex) Google App Engine, IBM smart business development, Test Cloud
+<img src="https://user-images.githubusercontent.com/31917400/46667878-db693800-cbc2-11e8-9832-0c779cdf0c34.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/46669813-6a2c8380-cbc8-11e8-9cbc-a3bd311de192.jpg" />
+
+__Q4. IaaS:__
+ - `IP` uses the **cloud** to outsource the provision of computing infrastructure to host service. IP(infra_provider) makes entire computing infrastructure available "as a service". It manages a large pool of computing resources and use virtualization to assign and resize the resources required by customers. Rather than purchasing servers, customers rent processing capacity, memory, data storage, networking resources provisioned over a network. Supporting this service is through a combination of some special features of CC such as dynamic provisioning, fine_grained measurement(metering), virtualization, broadband access, flexible billing.  
+<img src="https://user-images.githubusercontent.com/31917400/46665107-c688a680-cbba-11e8-9a62-b7a035d1fe0f.jpg" />
+
+__Q5. Describe additional Cloud Service:__
+ - A number of other service candidates have identified by market trends. These includes DaaS(data), TaaS(testing), IaaS(integration). 
+ - However, they could fall into the SaaS, PaaS models.  
+
+__Q6. Describe a Reference Arch for the PaaS model:__
+<img src="https://user-images.githubusercontent.com/31917400/46671394-8b8f6e80-cbcc-11e8-97af-3f5f79ab6074.jpg" />
+
+ - Cloud_provider(AWS) makes its service available(via APIs) to the users.  
+ - BSS layer enables capabilities such as subscription services for a pay-per-usage model.
+ - OSS layer is reponsible for making resources available on demand and for the security of the environment. 
+ - To instantiate an new cloud instance, the user sends a request to the cloud_provider. The request is delegated to OSS that initiates and manages cloud service instances. 
+ 
+ - cloud management platform enables to manage, deploy, automate business applications on the cloud. 
+ - OSS manages the creation of cloud service instances. 
+ - BSS manages the business aspects of cloud service instances - metering, reporting, analytics, etc.
+ - Depending on the environment, the user interface to the cloud management platform can be anything; and this interface manages the virtual machine images and the virtualized infrastructure.  
+   - from a comprehensive portal interface? 
+   - to API
+ 
+-----------------------------------------------------------------------------------
+## Cloud Deployment Scenarios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
